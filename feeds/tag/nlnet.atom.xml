@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://attila.demo.arulraj.net/" rel="alternate"></link><link href="https://attila.demo.arulraj.net/feeds/tag/nlnet.atom.xml" rel="self"></link><id>https://attila.demo.arulraj.net/</id><updated>2023-05-09T01:17:59+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Introduction</title><link href="https://attila.demo.arulraj.net/2023/05/introduction/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2023-05-09T01:17:59+02:00</updated><author><name>Saket Sinha</name></author><id>tag:attila.demo.arulraj.net,2023-05-01:/2023/05/introduction/</id><content type="html">&lt;p&gt;This is introductory post for the project Libre Car Control funded by Nlnet.&lt;/p&gt;
-&lt;h2&gt;Logo&lt;/h2&gt;
-&lt;figure class="aligncenter"&gt;
-            &lt;a href="assets/images/logo.png"&gt;&lt;img src="assets/images/logo.png" alt="Logo" style="max-width:310px;max-height:308px" class="size-full wp-image-1001"/&gt;&lt;/a&gt;
-            &lt;figcaption class="text-center"&gt;Our Logo&lt;/figcaption&gt;
-        &lt;/figure&gt;</content><category term="Upate"></category><category term="Nlnet"></category></entry></feed>
