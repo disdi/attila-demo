@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-05-09T21:43:12+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1</title><link href="https://librecar.dev/2023/05/milestone-1/" rel="alternate"></link><published>2023-05-09T21:43:12+02:00</published><updated>2023-05-09T10:27:58+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-09:/2023/05/milestone-1/</id><summary type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-05-09T21:43:12+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1</title><link href="https://librecar.dev/2023/05/milestone-1/" rel="alternate"></link><published>2023-05-09T21:43:12+02:00</published><updated>2023-05-09T10:34:03+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-09:/2023/05/milestone-1/</id><summary type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;FPGA board boots up Linux using linux-on-litex-vexriscv.&lt;/p&gt;
@@ -29,7 +29,7 @@ We are able to boot Linux on Artix7 from the official Litex repository since thi
    available as python egg in the development environment.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Litex SOC with CTUCAN COntroller&lt;/p&gt;
+&lt;p&gt;Litex SOC with CTUCAN Controller&lt;/p&gt;
 &lt;p&gt;We created a new Litex Core with CTUCAN controller and mapped it to the processor. When Litex BIOS boots up, CTUCAN
 controller can be seen in the memory region.&lt;/p&gt;
 &lt;/li&gt;
