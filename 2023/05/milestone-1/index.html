@@ -56,7 +56,7 @@
 <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://librecar.dev/2023/05/milestone-1/"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2023-05-09 21:43:12+02:00"/>
-<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content="2023-05-09 10:34:03.613344+02:00"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content="2023-05-09 10:37:07.075448+02:00"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:author" content="https://librecar.dev/author/saket-sinha/">
   <meta prefix="og: http://ogp.me/ns#" property="article:publisher" content="http://facebook.com/arulraj.net" />
 <meta prefix="og: http://ogp.me/ns#" property="article:section" content="Update"/>
@@ -80,7 +80,7 @@
   "name": "Milestone 1",
   "headline": "Milestone 1",
   "datePublished": "2023-05-09 21:43:12+02:00",
-  "dateModified": "2023-05-09 10:34:03.613344+02:00",
+  "dateModified": "2023-05-09 10:37:07.075448+02:00",
   "author": {
     "@type": "Person",
     "name": "Saket Sinha",
@@ -152,32 +152,30 @@
         <div class="inner">
             <section class="post-content">
                 <p>This is to update on the first milestone that is archeived in Libre Car Control project.</p>
-<ol>
+<ul>
 <li>
 <p>FPGA board boots up Linux using linux-on-litex-vexriscv.</p>
-</li>
-<li>
-<p>Replacing ECP5 with Artix7</p>
+<ul>
+<li>Replacing ECP5 with Artix7</li>
+</ul>
 <p>We switched from Lattice ECP5 to Xillinx Artix7 FPGA since we found that yosys toolchain was not able to synthesize
 vhdl code. The project is now being develop on Digilent Artix7 board. 
 We are able to boot Linux on Artix7 from the official Litex repository since this board is officially supported. </p>
 </li>
 <li>
 <p>CTUCAN Controller IP in integrated in Litex.</p>
-</li>
-<li>
-<p>CTUCAN controller Litex Integration</p>
-</li>
-</ol>
-<p>We generated VHDL code for CTUCAN controller and used the CTUCAN wrapper to integrate it in Litex ecosystem. It became
-   available as python egg in the development environment.</p>
 <ul>
-<li>
-<p>Litex SOC with CTUCAN Controller</p>
-<p>We created a new Litex Core with CTUCAN controller and mapped it to the processor. When Litex BIOS boots up, CTUCAN
-controller can be seen in the memory region.</p>
+<li>CTUCAN controller Litex Integration</li>
+</ul>
 </li>
 </ul>
+<p>We generated VHDL code for CTUCAN controller and used the CTUCAN wrapper to integrate it in Litex ecosystem. It became
+   available as python egg in the development environment.</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">Litex</span><span class="w"> </span><span class="n">SOC</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">CTUCAN</span><span class="w"> </span><span class="n">Controller</span>
+
+<span class="n">We</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">Litex</span><span class="w"> </span><span class="n">Core</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">CTUCAN</span><span class="w"> </span><span class="n">controller</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">mapped</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">processor</span><span class="p">.</span><span class="w"> </span><span class="n">When</span><span class="w"> </span><span class="n">Litex</span><span class="w"> </span><span class="n">BIOS</span><span class="w"> </span><span class="n">boots</span><span class="w"> </span><span class="n">up</span><span class="p">,</span><span class="w"> </span><span class="n">CTUCAN</span>
+<span class="n">controller</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">seen</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">memory</span><span class="w"> </span><span class="n">region</span><span class="p">.</span>
+</code></pre></div>
             </section>
 
             <section class="post-info">

@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-05-09T21:43:12+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1</title><link href="https://librecar.dev/2023/05/milestone-1/" rel="alternate"></link><published>2023-05-09T21:43:12+02:00</published><updated>2023-05-09T10:34:03+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-09:/2023/05/milestone-1/</id><summary type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
-&lt;ol&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-05-09T21:43:12+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1</title><link href="https://librecar.dev/2023/05/milestone-1/" rel="alternate"></link><published>2023-05-09T21:43:12+02:00</published><updated>2023-05-09T10:37:07+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-09:/2023/05/milestone-1/</id><summary type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;FPGA board boots up Linux using linux-on-litex-vexriscv.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Replacing ECP5 with Artix7&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Replacing ECP5 with Artix7&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;We switched from Lattice ECP5 to Xillinx Artix7 FPGA since we found that yosys toolchain was not able to synthesize
-vhdl code. The …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
-&lt;ol&gt;
+vhdl code. The …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;FPGA board boots up Linux using linux-on-litex-vexriscv.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Replacing ECP5 with Artix7&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Replacing ECP5 with Artix7&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;We switched from Lattice ECP5 to Xillinx Artix7 FPGA since we found that yosys toolchain was not able to synthesize
 vhdl code. The project is now being develop on Digilent Artix7 board. 
 We are able to boot Linux on Artix7 from the official Litex repository since this board is officially supported. &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;CTUCAN Controller IP in integrated in Litex.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CTUCAN controller Litex Integration&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;CTUCAN controller Litex Integration&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;We generated VHDL code for CTUCAN controller and used the CTUCAN wrapper to integrate it in Litex ecosystem. It became
    available as python egg in the development environment.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Litex SOC with CTUCAN Controller&lt;/p&gt;
-&lt;p&gt;We created a new Litex Core with CTUCAN controller and mapped it to the processor. When Litex BIOS boots up, CTUCAN
-controller can be seen in the memory region.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Update"></category><category term="Nlnet"></category></entry><entry><title>Introduction</title><link href="https://librecar.dev/2023/05/introduction/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2023-05-09T09:31:54+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-01:/2023/05/introduction/</id><content type="html">&lt;p&gt;This is introductory post for the project Libre Car Control funded by Nlnet.&lt;/p&gt;</content><category term="Update"></category><category term="Nlnet"></category></entry></feed>
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Litex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;SOC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CTUCAN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Controller&lt;/span&gt;
+
+&lt;span class="n"&gt;We&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;created&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Litex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CTUCAN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;controller&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mapped&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;When&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Litex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;BIOS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;boots&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;up&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CTUCAN&lt;/span&gt;
+&lt;span class="n"&gt;controller&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;can&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;be&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;seen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;memory&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;region&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Update"></category><category term="Nlnet"></category></entry><entry><title>Introduction</title><link href="https://librecar.dev/2023/05/introduction/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2023-05-09T09:31:54+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-01:/2023/05/introduction/</id><content type="html">&lt;p&gt;This is introductory post for the project Libre Car Control funded by Nlnet.&lt;/p&gt;</content><category term="Update"></category><category term="Nlnet"></category></entry></feed>
