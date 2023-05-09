@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Saket Sinha</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/author/saket-sinha.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-05-09T01:31:41+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Introduction</title><link href="https://librecar.dev/2023/05/introduction/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2023-05-09T01:31:41+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-01:/2023/05/introduction/</id><content type="html">&lt;p&gt;This is introductory post for the project Libre Car Control funded by Nlnet.&lt;/p&gt;
-&lt;h2&gt;Logo&lt;/h2&gt;
-&lt;figure class="aligncenter"&gt;
-            &lt;a href="assets/images/logo.png"&gt;&lt;img src="assets/images/logo.png" alt="Logo" style="max-width:310px;max-height:308px" class="size-full wp-image-1001"/&gt;&lt;/a&gt;
-            &lt;figcaption class="text-center"&gt;Our Logo&lt;/figcaption&gt;
-        &lt;/figure&gt;</content><category term="Upate"></category><category term="Nlnet"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Saket Sinha</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/author/saket-sinha.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-05-09T09:25:27+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Introduction</title><link href="https://librecar.dev/2023/05/introduction/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2023-05-09T09:04:19+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-01:/2023/05/introduction/</id><content type="html">&lt;p&gt;This is introductory post for the project Libre Car Control funded by Nlnet.&lt;/p&gt;</content><category term="Update"></category><category term="Nlnet"></category></entry><entry><title>Milestone 1</title><link href="https://librecar.dev/2023/05/milestone-1/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2023-05-09T09:25:27+02:00</updated><author><name>Saket Sinha</name></author><id>tag:librecar.dev,2023-05-01:/2023/05/milestone-1/</id><summary type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;ECP5 based FPGA board boots up Linux using linux-on-litex-vexriscv.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CTUCAN Controller IP in integrated in Litex.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;CTUCAN controller compiles with Litex build environment.&lt;/li&gt;
+&lt;li&gt;CTUCAN controller is mapped to vexriscv core.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Litex BIOS booting up …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;ECP5 based FPGA board boots up Linux using linux-on-litex-vexriscv.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CTUCAN Controller IP in integrated in Litex.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;CTUCAN controller compiles with Litex build environment.&lt;/li&gt;
+&lt;li&gt;CTUCAN controller is mapped to vexriscv core.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Litex BIOS booting up on ECP5 based FPGA board shows CTUCAN IP memory
+regions/CSRs at bootup.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CTUCAN Controller Device Driver Bringup.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;ECP5 based FPGA board boots up a custom SOC with Linux on Litex vexriscv with
+CTUCAN controller IP.&lt;/li&gt;
+&lt;li&gt;With insmod command opensource ctucan driver is inserted in Linux kernel, CAN
+Device in enumerated.&lt;/li&gt;
+&lt;/ol&gt;</content><category term="Update"></category><category term="Nlnet"></category></entry></feed>
