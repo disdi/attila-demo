@@ -9,4 +9,4 @@ context: post
 ---
 This is introductory post for the project Libre Car Control funded by Nlnet.
 
-[logo]: https://github.com/disdi/attila-demo/raw/main/content/assets/images/logo.png "Our Logo"
+[logo]: https://github.com/disdi/attila-demo/raw/main/content/assets/images/logo.png ""

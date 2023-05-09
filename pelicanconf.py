@@ -140,7 +140,7 @@ THEME = 'attila'
 ### Theme specific settings
 
 # To set background image for the home page.
-# HOME_COVER = 'https://images.unsplash.com/photo-1600884877875-065ed42abbd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2582&q=80'
+HOME_COVER = 'https://github.com/disdi/attila-demo/raw/main/content/assets/images/logo.png'
 
 # Custom Header
 
