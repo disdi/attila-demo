@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - misc</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/misc.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-05-30T12:35:24+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1 Update</title><link href="https://librecar.dev/2023/05/milestine-one-update/" rel="alternate"></link><published>2023-05-30T01:25:00+02:00</published><updated>2023-05-30T12:35:24+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-05-30:/2023/05/milestine-one-update/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
+&lt;h2&gt;CTUCAN Controller for Linux&lt;/h2&gt;
+&lt;p&gt;We updated linux-on-litex project to integrate CTUCAN Controller booting over Linux.&lt;/p&gt;
+&lt;p&gt;The link to the code is available at below link -
+&lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/e9f9c6b14bca11cca2195bd61f9c5334ead3221d"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/e9f9c6b14bca11cca2195bd61f9c5334ead3221d&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When Litex BIOS boots up, it shows all the peripherals needed to boot linux alongwith CTUCAN Controller in …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
+&lt;h2&gt;CTUCAN Controller for Linux&lt;/h2&gt;
+&lt;p&gt;We updated linux-on-litex project to integrate CTUCAN Controller booting over Linux.&lt;/p&gt;
+&lt;p&gt;The link to the code is available at below link -
+&lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/e9f9c6b14bca11cca2195bd61f9c5334ead3221d"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/e9f9c6b14bca11cca2195bd61f9c5334ead3221d&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When Litex BIOS boots up, it shows all the peripherals needed to boot linux alongwith CTUCAN Controller in the memory region.
+The screenshoot below of Litex Console:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/litex-linux.png"&gt;&lt;img alt="Image" src="/assets/images/litex-linux.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next step is to modify linux kernel booting over the litex bitstream with CTUCAN Controller to enumerate a CAN device.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="misc"></category><category term="Nlnet"></category></entry></feed>
