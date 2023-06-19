@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-06-08T15:24:07+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1 Complete</title><link href="https://librecar.dev/2023/06/milestone-one-complete/" rel="alternate"></link><published>2023-06-08T14:21:00+02:00</published><updated>2023-06-08T15:24:07+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-06-08:/2023/06/milestone-one-complete/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-06-19T08:49:46+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1 Complete</title><link href="https://librecar.dev/2023/06/milestone-one-complete/" rel="alternate"></link><published>2023-06-08T14:21:00+02:00</published><updated>2023-06-19T08:49:46+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-06-08:/2023/06/milestone-one-complete/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
 &lt;h2&gt;CTUCAN Controller for Linux&lt;/h2&gt;
 &lt;p&gt;We updated linux-on-litex kernel config to enable CTUCAN linux driver.&lt;/p&gt;
 &lt;p&gt;The screenshoot below shows the menuconfig to enable CTUCAN driver:&lt;/p&gt;
@@ -31,6 +31,8 @@ status = &amp;quot;okay&amp;quot;;
 &lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-linux-boot.png"&gt;&lt;img alt="Image2" src="/assets/images/ctucan-linux-boot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In the buildroot Image booting up we can clearly see the CTUCAN driver module is associated with a device:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-buildroot.png"&gt;&lt;img alt="Image3" src="/assets/images/ctucan-buildroot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Further, it gets enumerated as a network device:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-net.png"&gt;&lt;img alt="Image4" src="/assets/images/ctucan-net.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Next step is to connect Digilent Arty Board running CTUCAN IP core with an external MCP2551 CAN transceiver Board and attempt
 CAN transmission to another device on this CAN Bus.&lt;/p&gt;
 &lt;/div&gt;
