@@ -37,6 +37,10 @@ In the buildroot Image booting up we can clearly see the CTUCAN driver module is
 
 |Image3|
 
+Further, it gets enumerated as a network device:
+
+|Image4|
+
 Next step is to connect Digilent Arty Board running CTUCAN IP core with an external MCP2551 CAN transceiver Board and attempt
 CAN transmission to another device on this CAN Bus.
 
@@ -48,3 +52,6 @@ CAN transmission to another device on this CAN Bus.
 
 .. |Image3| image:: /assets/images/ctucan-buildroot.png
    :target: /assets/images/ctucan-buildroot.png   
+
+.. |Image4| image:: /assets/images/ctucan-net.png
+   :target: /assets/images/ctucan-net.png
