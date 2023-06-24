@@ -130,7 +130,7 @@ SITEMAP = {
 }
 
 # Comments
-DISQUS_SITENAME = "attilademo"
+DISQUS_SITENAME = "librecar"
 
 # Analytics
 GOOGLE_ANALYTICS = "UA-3546274-12"
