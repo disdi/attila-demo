@@ -27,7 +27,7 @@ CTU_CAN_FD_0: CTU_CAN_FD@80010000 {
     };
 
 The link to the complete modified device-tree is available at below link - 
-https://github.com/litex-hub/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4
+https://github.com/disdi/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4
 
 When Linux  boots up, it shows the CTUCAN linux driver getting initialized.
 
