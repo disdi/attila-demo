@@ -1,6 +1,7 @@
 :date: 2023-05-30 01:25
 :author: disdi
 :tags: Nlnet
+:category: Nlnet
 :slug: milestine-one-update
 :title: Milestone 1 Update
 :disqus_identifier: /2023/05/milestine-one-update.html

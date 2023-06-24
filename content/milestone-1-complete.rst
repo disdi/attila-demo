@@ -1,6 +1,7 @@
 :date: 2023-06-08 14:21
 :author: disdi
 :tags: Nlnet
+:category: Nlnet
 :slug: milestone-one-complete
 :title: Milestone 1 Complete
 :disqus_identifier: /2023/06/milestone-one-complete.html

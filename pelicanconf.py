@@ -36,10 +36,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Facebook', 'http://facebook.com/arulraj.net'),
-          ('Twitter', 'http://twitter.com/getpelican'),
-          ('Github', 'https://github.com/getpelican/pelican')
-          )
+#SOCIAL = (('Facebook', 'http://facebook.com/arulraj.net'),
+#          ('Twitter', 'http://twitter.com/getpelican'),
+#          ('Github', 'https://github.com/getpelican/pelican')
+#          )
 
 # Pagination
 DEFAULT_PAGINATION = 5
@@ -184,19 +184,19 @@ AUTHOR_META = {
 }
 
 MENUITEMS = (('Home', '/'),
-             ('Tag', '/tag/getting-started/'),
-             ('Author', '/author/pelican/'),
-             ('Category', '/category/examples/'),
-             ('Archives','/2023/01/'),
+             ('Tag', '/tag/nlnet/'),
+             ('Author', '/author/disdi/'),
+             ('Category', '/category/nlnet/'),
+             ('Archives','/2023/'),
              ('Plugins', 'https://github.com/pelican-plugins'))
 
 SHOW_ARTICLE_MODIFIED_TIME = False
 SHOW_AUTHOR_BIO_IN_ARTICLE = False
 SHOW_CATEGORIES_ON_MENU = False
-SHOW_COMMENTS_COUNT_IN_ARTICLE_SUMMARY = True
-SHOW_CREDITS = True
+SHOW_COMMENTS_COUNT_IN_ARTICLE_SUMMARY = False
+SHOW_CREDITS = False
 SHOW_FULL_ARTICLE_IN_SUMMARY = False
-SHOW_PAGES_ON_MENU = True
+SHOW_PAGES_ON_MENU = False
 SHOW_SITESUBTITLE_IN_HTML_TITLE = False
 SHOW_TAGS_IN_ARTICLE_SUMMARY = False
 
