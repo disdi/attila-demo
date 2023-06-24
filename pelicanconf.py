@@ -172,14 +172,11 @@ CATEGORY_META = {
 
 AUTHOR_META = {
   "pelican": {
-    "name": "Saket Sinha",
     "cover": "https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     "image": "assets/images/logo.png",
     "website": "https://librecar.dev/",
-    "linkedin": "saket-sinha-382416199",
     "github": "disdi",
     "location": "Berlin",
-    "bio": "Embedded Developer with 12 years expireince"
   }
 }
 
