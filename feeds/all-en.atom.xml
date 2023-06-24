@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-06-19T08:49:46+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1 Complete</title><link href="https://librecar.dev/2023/06/milestone-one-complete/" rel="alternate"></link><published>2023-06-08T14:21:00+02:00</published><updated>2023-06-19T08:49:46+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-06-08:/2023/06/milestone-one-complete/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-06-24T03:56:31+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1 Complete</title><link href="https://librecar.dev/2023/06/milestone-one-complete/" rel="alternate"></link><published>2023-06-08T14:21:00+02:00</published><updated>2023-06-24T03:56:31+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-06-08:/2023/06/milestone-one-complete/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
 &lt;h2&gt;CTUCAN Controller for Linux&lt;/h2&gt;
 &lt;p&gt;We updated linux-on-litex kernel config to enable CTUCAN linux driver.&lt;/p&gt;
 &lt;p&gt;The screenshoot below shows the menuconfig to enable CTUCAN driver:&lt;/p&gt;
@@ -26,7 +26,7 @@ status = &amp;quot;okay&amp;quot;;
 };&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;p&gt;The link to the complete modified device-tree is available at below link -
-&lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4&lt;/a&gt;&lt;/p&gt;
+&lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When Linux  boots up, it shows the CTUCAN linux driver getting initialized.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-linux-boot.png"&gt;&lt;img alt="Image2" src="/assets/images/ctucan-linux-boot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In the buildroot Image booting up we can clearly see the CTUCAN driver module is associated with a device:&lt;/p&gt;
