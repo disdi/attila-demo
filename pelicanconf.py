@@ -185,7 +185,7 @@ MENUITEMS = (('Home', '/'),
              ('Author', '/author/disdi/'),
              ('Category', '/category/nlnet/'),
              ('Archives','/2023/'),
-             ('Plugins', 'https://github.com/pelican-plugins'))
+             ('Milestones', 'https://disdi.github.io/librecar-milestone'))
 
 SHOW_ARTICLE_MODIFIED_TIME = False
 SHOW_AUTHOR_BIO_IN_ARTICLE = False
