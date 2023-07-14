@@ -181,10 +181,10 @@ AUTHOR_META = {
 }
 
 MENUITEMS = (('Home', '/'),
-             ('Tag', '/tag/nlnet/'),
-             ('Author', '/author/disdi/'),
-             ('Category', '/category/nlnet/'),
-             ('Archives','/2023/'),
+             #('Tag', '/tag/nlnet/'),
+             #('Author', '/author/disdi/'),
+             #('Category', '/category/nlnet/'),
+             #('Archives','/2023/'),
              ('Milestones', 'https://disdi.github.io/librecar-milestone'))
 
 SHOW_ARTICLE_MODIFIED_TIME = False
