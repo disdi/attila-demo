@@ -52,8 +52,14 @@ The major work done in this Milestone involved :
    |Image4|
 
    
-The images show 01010101 sent from Litex Console is recieved in PCAN-View.
-==========================================================================
+TestBench Setup
+===============
+
+   |Image5|
+
+
+The testbench results can be seen by referencing Section 2 where 01010101 sent from Litex Console is recieved in PCAN-View In Section 5.
+
 
 .. |Image| image:: /assets/images/litex-can.png
    :target: /assets/images/litex-can.png
@@ -66,3 +72,6 @@ The images show 01010101 sent from Litex Console is recieved in PCAN-View.
 
 .. |Image4| image:: /assets/images/pcan-trace.jpeg
    :target: /assets/images/pcan-trace.jpeg
+
+.. |Image5| image:: /assets/images/can_testbench.png
+   :target: /assets/images/can_testbench.png   
