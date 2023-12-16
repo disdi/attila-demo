@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-12-16T14:21:00+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 2 Complete</title><link href="https://librecar.dev/2023/12/milestone-two-complete/" rel="alternate"></link><published>2023-12-16T14:21:00+01:00</published><updated>2023-12-16T04:35:09+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-12-16:/2023/12/milestone-two-complete/</id><summary type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-12-16T14:21:00+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 2 Complete</title><link href="https://librecar.dev/2023/12/milestone-two-complete/" rel="alternate"></link><published>2023-12-16T14:21:00+01:00</published><updated>2023-12-16T12:16:40+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-12-16:/2023/12/milestone-two-complete/</id><summary type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices.&lt;/p&gt;
 &lt;p&gt;The major work done in this Milestone involved :&lt;/p&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Bring UP the CTUCAN device enumerated in first Milestone.
@@ -34,8 +34,11 @@ PCAN-USB adapter is used to emulate CAN device over development computer.&lt;/p&
 &lt;p&gt;&lt;a class="reference external" href="/assets/images/pcan-trace.jpeg"&gt;&lt;img alt="Image4" src="/assets/images/pcan-trace.jpeg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="section" id="the-images-show-01010101-sent-from-litex-console-is-recieved-in-pcan-view"&gt;
-&lt;h2&gt;The images show 01010101 sent from Litex Console is recieved in PCAN-View.&lt;/h2&gt;
+&lt;div class="section" id="testbench-setup"&gt;
+&lt;h2&gt;TestBench Setup&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;a class="reference external" href="/assets/images/can_testbench.png"&gt;&lt;img alt="Image5" src="/assets/images/can_testbench.png" /&gt;&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;The testbench results can be seen by referencing Section 2 where 01010101 sent from Litex Console is recieved in PCAN-View In Section 5.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Milestone 1 Complete</title><link href="https://librecar.dev/2023/06/milestone-one-complete/" rel="alternate"></link><published>2023-06-08T14:21:00+02:00</published><updated>2023-06-24T04:54:35+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-06-08:/2023/06/milestone-one-complete/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
 &lt;h2&gt;CTUCAN Controller for Linux&lt;/h2&gt;
