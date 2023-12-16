@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - disdi</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/author/disdi.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-12-16T14:21:00+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 2 Complete</title><link href="https://librecar.dev/2023/12/milestone-two-complete/" rel="alternate"></link><published>2023-12-16T14:21:00+01:00</published><updated>2023-12-16T04:22:13+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-12-16:/2023/12/milestone-two-complete/</id><summary type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - disdi</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/author/disdi.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-12-16T14:21:00+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 2 Complete</title><link href="https://librecar.dev/2023/12/milestone-two-complete/" rel="alternate"></link><published>2023-12-16T14:21:00+01:00</published><updated>2023-12-16T04:35:09+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-12-16:/2023/12/milestone-two-complete/</id><summary type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices.&lt;/p&gt;
 &lt;p&gt;The major work done in this Milestone involved :&lt;/p&gt;
 &lt;ol class="arabic"&gt;
-&lt;li&gt;&lt;p class="first"&gt;Bring UP the CTUCAN device enumerated in Milestone 1.
+&lt;li&gt;&lt;p class="first"&gt;Bring UP the CTUCAN device enumerated in first Milestone.
 Update of Litex interfaces was needed to make CAN interface …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices.&lt;/p&gt;
 &lt;p&gt;The major work done in this Milestone involved :&lt;/p&gt;
 &lt;ol class="arabic"&gt;
-&lt;li&gt;&lt;p class="first"&gt;Bring UP the CTUCAN device enumerated in Milestone 1.
+&lt;li&gt;&lt;p class="first"&gt;Bring UP the CTUCAN device enumerated in first Milestone.
 Update of Litex interfaces was needed to make CAN interface UP and running.&lt;/p&gt;
 &lt;p&gt;Refer : &lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/b4c7c81e48d285977055b19cb08069af642ff516"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/b4c7c81e48d285977055b19cb08069af642ff516&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -18,7 +18,8 @@ Support was added to buildroot to include needed utilities for CAN and make it p
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Now when CAN IP is up, we needed a CAN transceiver to connect to CAN network. SN65HVD230 CAN Board is used for this purpose.&lt;/p&gt;
 &lt;p&gt;Refer : &lt;a class="reference external" href="https://www.waveshare.com/sn65hvd230-can-board.htm"&gt;https://www.waveshare.com/sn65hvd230-can-board.htm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Connection between FPGA board and CAN transceiver is shown below :&lt;/p&gt;
+&lt;p&gt;can_tx and canrx are connected together with 3.3V to power the transceiver.
+Connection between FPGA board and CAN transceiver is shown below :&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="/assets/images/fpga-traceiver.jpeg"&gt;&lt;img alt="Image2" src="/assets/images/fpga-traceiver.jpeg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Considerable testing is done over different CAN devices to confirm CTUCAN IP is able to comunicate over CAN network.
@@ -26,6 +27,7 @@ PCAN-USB adapter is used to emulate CAN device over development computer.&lt;/p&
 &lt;p&gt;Refer : &lt;a class="reference external" href="https://www.peak-system.com/PCAN-USB.199.0.html?&amp;amp;L=1"&gt;https://www.peak-system.com/PCAN-USB.199.0.html?&amp;amp;L=1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Connection between PCAN-USB adapter with DB9 connector and CAN transceiver is shown below :&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="/assets/images/tranciever-Pcanusb.jpeg"&gt;&lt;img alt="Image3" src="/assets/images/tranciever-Pcanusb.jpeg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For DB9 Connector pinout for CAN, refer : &lt;a class="reference external" href="https://documentation.help/NI-CAN/High-Speed_CAN_Pinout_Cable.html"&gt;https://documentation.help/NI-CAN/High-Speed_CAN_Pinout_Cable.html&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;PCAN-View is to analyze the CAN network to check for the protocal conformity and errors.&lt;/p&gt;
 &lt;p&gt;Refer : &lt;a class="reference external" href="https://www.peak-system.com/PCAN-View.242.0.html?&amp;amp;L=1"&gt;https://www.peak-system.com/PCAN-View.242.0.html?&amp;amp;L=1&lt;/a&gt;&lt;/p&gt;
