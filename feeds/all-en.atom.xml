@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-06-24T04:54:54+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 1 Complete</title><link href="https://librecar.dev/2023/06/milestone-one-complete/" rel="alternate"></link><published>2023-06-08T14:21:00+02:00</published><updated>2023-06-24T04:54:35+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-06-08:/2023/06/milestone-one-complete/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2023-12-16T14:21:00+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 2 Complete</title><link href="https://librecar.dev/2023/12/milestone-two-complete/" rel="alternate"></link><published>2023-12-16T14:21:00+01:00</published><updated>2023-12-16T04:22:13+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-12-16:/2023/12/milestone-two-complete/</id><summary type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices.&lt;/p&gt;
+&lt;p&gt;The major work done in this Milestone involved :&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Bring UP the CTUCAN device enumerated in Milestone 1.
+Update of Litex interfaces was needed to make CAN interface …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices.&lt;/p&gt;
+&lt;p&gt;The major work done in this Milestone involved :&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Bring UP the CTUCAN device enumerated in Milestone 1.
+Update of Litex interfaces was needed to make CAN interface UP and running.&lt;/p&gt;
+&lt;p&gt;Refer : &lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/b4c7c81e48d285977055b19cb08069af642ff516"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/b4c7c81e48d285977055b19cb08069af642ff516&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Use ip utilites of linux which treats CAN as network device and make it up.
+Support was added to buildroot to include needed utilities for CAN and make it part of bootup script.&lt;/p&gt;
+&lt;p&gt;Refer : &lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/64ecd04d2eefc14753181dbf8a1bc65d09c65991"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/64ecd04d2eefc14753181dbf8a1bc65d09c65991&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Below image shows CAN bus coming up on system restart and can-utils is used for communication over CAN network :&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/litex-can.png"&gt;&lt;img alt="Image" src="/assets/images/litex-can.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Now when CAN IP is up, we needed a CAN transceiver to connect to CAN network. SN65HVD230 CAN Board is used for this purpose.&lt;/p&gt;
+&lt;p&gt;Refer : &lt;a class="reference external" href="https://www.waveshare.com/sn65hvd230-can-board.htm"&gt;https://www.waveshare.com/sn65hvd230-can-board.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Connection between FPGA board and CAN transceiver is shown below :&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/fpga-traceiver.jpeg"&gt;&lt;img alt="Image2" src="/assets/images/fpga-traceiver.jpeg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Considerable testing is done over different CAN devices to confirm CTUCAN IP is able to comunicate over CAN network.
+PCAN-USB adapter is used to emulate CAN device over development computer.&lt;/p&gt;
+&lt;p&gt;Refer : &lt;a class="reference external" href="https://www.peak-system.com/PCAN-USB.199.0.html?&amp;amp;L=1"&gt;https://www.peak-system.com/PCAN-USB.199.0.html?&amp;amp;L=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Connection between PCAN-USB adapter with DB9 connector and CAN transceiver is shown below :&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/tranciever-Pcanusb.jpeg"&gt;&lt;img alt="Image3" src="/assets/images/tranciever-Pcanusb.jpeg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;PCAN-View is to analyze the CAN network to check for the protocal conformity and errors.&lt;/p&gt;
+&lt;p&gt;Refer : &lt;a class="reference external" href="https://www.peak-system.com/PCAN-View.242.0.html?&amp;amp;L=1"&gt;https://www.peak-system.com/PCAN-View.242.0.html?&amp;amp;L=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/pcan-trace.jpeg"&gt;&lt;img alt="Image4" src="/assets/images/pcan-trace.jpeg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="section" id="the-images-show-01010101-sent-from-litex-console-is-recieved-in-pcan-view"&gt;
+&lt;h2&gt;The images show 01010101 sent from Litex Console is recieved in PCAN-View.&lt;/h2&gt;
+&lt;/div&gt;
+</content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Milestone 1 Complete</title><link href="https://librecar.dev/2023/06/milestone-one-complete/" rel="alternate"></link><published>2023-06-08T14:21:00+02:00</published><updated>2023-06-24T04:54:35+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-06-08:/2023/06/milestone-one-complete/</id><summary type="html">&lt;div class="section" id="ctucan-controller-for-linux"&gt;
 &lt;h2&gt;CTUCAN Controller for Linux&lt;/h2&gt;
 &lt;p&gt;We updated linux-on-litex kernel config to enable CTUCAN linux driver.&lt;/p&gt;
 &lt;p&gt;The screenshoot below shows the menuconfig to enable CTUCAN driver:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/ctucan-config.png"&gt;&lt;img alt="Image" src="/assets/images/ctucan-config.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-config.png"&gt;&lt;img alt="Image" src="/assets/images/ctucan-config.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Next we had to update the device tree manually to add a section for CTUCAN driver:&lt;/p&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;CTU_CAN_FD_0: &lt;a class="reference external" href="mailto:CTU_CAN_FD&amp;#64;80010000"&gt;CTU_CAN_FD&amp;#64;80010000&lt;/a&gt; {&lt;/dt&gt;
@@ -13,7 +49,7 @@ interrupt-parent …&lt;/dd&gt;&lt;/dl&gt;&lt;/div&gt;</summary><content type="h
 &lt;h2&gt;CTUCAN Controller for Linux&lt;/h2&gt;
 &lt;p&gt;We updated linux-on-litex kernel config to enable CTUCAN linux driver.&lt;/p&gt;
 &lt;p&gt;The screenshoot below shows the menuconfig to enable CTUCAN driver:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/ctucan-config.png"&gt;&lt;img alt="Image" src="/assets/images/ctucan-config.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-config.png"&gt;&lt;img alt="Image" src="/assets/images/ctucan-config.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Next we had to update the device tree manually to add a section for CTUCAN driver:&lt;/p&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;CTU_CAN_FD_0: &lt;a class="reference external" href="mailto:CTU_CAN_FD&amp;#64;80010000"&gt;CTU_CAN_FD&amp;#64;80010000&lt;/a&gt; {&lt;/dt&gt;
@@ -28,11 +64,11 @@ status = &amp;quot;okay&amp;quot;;
 &lt;p&gt;The link to the complete modified device-tree is available at below link -
 &lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When Linux  boots up, it shows the CTUCAN linux driver getting initialized.&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/ctucan-linux-boot.png"&gt;&lt;img alt="Image2" src="/assets/images/ctucan-linux-boot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-linux-boot.png"&gt;&lt;img alt="Image2" src="/assets/images/ctucan-linux-boot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In the buildroot Image booting up we can clearly see the CTUCAN driver module is associated with a device:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/ctucan-buildroot.png"&gt;&lt;img alt="Image3" src="/assets/images/ctucan-buildroot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-buildroot.png"&gt;&lt;img alt="Image3" src="/assets/images/ctucan-buildroot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Further, it gets enumerated as a network device:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/ctucan-net.png"&gt;&lt;img alt="Image4" src="/assets/images/ctucan-net.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/ctucan-net.png"&gt;&lt;img alt="Image4" src="/assets/images/ctucan-net.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Next step is to connect Digilent Arty Board running CTUCAN IP core with an external MCP2551 CAN transceiver Board and attempt
 CAN transmission to another device on this CAN Bus.&lt;/p&gt;
 &lt;/div&gt;
@@ -48,7 +84,7 @@ CAN transmission to another device on this CAN Bus.&lt;/p&gt;
 &lt;a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/e9f9c6b14bca11cca2195bd61f9c5334ead3221d"&gt;https://github.com/disdi/linux-on-litex-vexriscv/commit/e9f9c6b14bca11cca2195bd61f9c5334ead3221d&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When Litex BIOS boots up, it shows all the peripherals needed to boot linux alongwith CTUCAN Controller in the memory region.
 The screenshoot below of Litex Console:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/litex-linux.png"&gt;&lt;img alt="Image" src="/assets/images/litex-linux.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="/assets/images/litex-linux.png"&gt;&lt;img alt="Image" src="/assets/images/litex-linux.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Next step is to modify linux kernel booting over the litex bitstream with CTUCAN Controller to enumerate a CAN device.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Milestone 1</title><link href="https://librecar.dev/2023/05/milestone-1/" rel="alternate"></link><published>2023-05-09T21:43:12+02:00</published><updated>2023-06-24T04:54:47+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-05-09:/2023/05/milestone-1/</id><summary type="html">&lt;p&gt;This is to update on the first milestone that is archeived in Libre Car Control project.&lt;/p&gt;

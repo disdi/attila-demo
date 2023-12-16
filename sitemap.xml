@@ -5,36 +5,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://librecar.dev/</loc>
-<lastmod>2023-07-15T00:31:53-00:00</lastmod>
+<lastmod>2023-12-16T04:24:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/tag/</loc>
-<lastmod>2023-07-15T00:31:53-00:00</lastmod>
+<lastmod>2023-12-16T04:24:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/category/</loc>
-<lastmod>2023-07-15T00:31:53-00:00</lastmod>
+<lastmod>2023-12-16T04:24:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/author/</loc>
-<lastmod>2023-07-15T00:31:53-00:00</lastmod>
+<lastmod>2023-12-16T04:24:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/archive/</loc>
-<lastmod>2023-07-15T00:31:53-00:00</lastmod>
+<lastmod>2023-12-16T04:24:51-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://librecar.dev/2023/12/milestone-two-complete/</loc>
+<lastmod>2023-12-16T04:22:13+01:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -68,21 +75,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://librecar.dev/category/nlnet/</loc>
-<lastmod>2023-06-24T04:54:54+00:53</lastmod>
+<lastmod>2023-12-16T14:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/tag/nlnet/</loc>
-<lastmod>2023-06-24T04:54:54+00:53</lastmod>
+<lastmod>2023-12-16T14:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/author/disdi/</loc>
-<lastmod>2023-06-24T04:54:54+00:53</lastmod>
+<lastmod>2023-12-16T14:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
