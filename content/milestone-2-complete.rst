@@ -7,7 +7,7 @@
 :disqus_identifier: /2023/06/milestone-two-complete.html
 
 
-This is to update on completion of Milestone 2 of the project which involved communication on the CAn bus with real CAN devices. 
+This is to update on completion of Milestone 2 of the project which involved communication on the CAN network with real CAN devices.
 
 The major work done in this Milestone involved :
 
@@ -26,11 +26,15 @@ The major work done in this Milestone involved :
    |Image|
 
 3. Now when CAN IP is up, we needed a CAN transceiver to connect to CAN network. SN65HVD230 CAN Board is used for this purpose.
+
+   |Image6|
    
    Refer : https://www.waveshare.com/sn65hvd230-can-board.htm
 
-   can_tx and canrx are connected together with 3.3V to power the transceiver.
-   Connection between FPGA board and CAN transceiver is shown below :
+   can_tx and canrx are are mapped to ck_io pins exposed on J4 of Arty Board.
+   https://github.com/disdi/linux-on-litex-vexriscv/blob/master/soc_linux.py#L34
+
+   They are connected to CAN RX and CAN TX of transceiver with 3.3V to power it. Connection between FPGA board and CAN transceiver is shown below :
 
    |Image2| 
 
@@ -43,7 +47,7 @@ The major work done in this Milestone involved :
 
    |Image3|
 
-   For DB9 Connector pinout for CAN, refer : https://documentation.help/NI-CAN/High-Speed_CAN_Pinout_Cable.html 
+   CANH and CANL of transceiver is attached to (pin2 and pin7) DB9 connector. For DB9 Connector pinout for CAN, refer : https://documentation.help/NI-CAN/High-Speed_CAN_Pinout_Cable.html
 
 5. PCAN-View software run on development computer is to analyze the CAN network to check for the protocal conformity and errors.
 
@@ -74,4 +78,7 @@ The testbench results can be seen by referencing Section 2 where 01010101 sent f
    :target: /assets/images/pcan-trace.jpeg
 
 .. |Image5| image:: /assets/images/can_testbench.png
-   :target: /assets/images/can_testbench.png   
+   :target: /assets/images/can_testbench.png
+
+.. |Image6| image:: /assets/images/SN65HVD230-CAN-Board-2.jpg
+   :target: /assets/images/SN65HVD230-CAN-Board-2.jpg
