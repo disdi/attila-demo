@@ -45,7 +45,7 @@ The major work done in this Milestone involved :
 
    For DB9 Connector pinout for CAN, refer : https://documentation.help/NI-CAN/High-Speed_CAN_Pinout_Cable.html 
 
-5. PCAN-View is to analyze the CAN network to check for the protocal conformity and errors.
+5. PCAN-View software run on development computer is to analyze the CAN network to check for the protocal conformity and errors.
 
    Refer : https://www.peak-system.com/PCAN-View.242.0.html?&L=1
 
