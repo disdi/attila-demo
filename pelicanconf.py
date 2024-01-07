@@ -185,7 +185,8 @@ MENUITEMS = (('Home', '/'),
              #('Author', '/author/disdi/'),
              #('Category', '/category/nlnet/'),
              #('Archives','/2023/'),
-             ('Milestones', 'https://disdi.github.io/librecar-milestone'))
+             ('Milestones', 'https://disdi.github.io/librecar-milestone'),
+             ('Wiki', 'https://disdi.github.io/librecar-wiki'))
 
 SHOW_ARTICLE_MODIFIED_TIME = False
 SHOW_AUTHOR_BIO_IN_ARTICLE = False
