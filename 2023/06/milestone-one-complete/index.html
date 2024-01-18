@@ -143,7 +143,7 @@
 <h2>CTUCAN Controller for Linux</h2>
 <p>We updated linux-on-litex kernel config to enable CTUCAN linux driver.</p>
 <p>The screenshoot below shows the menuconfig to enable CTUCAN driver:</p>
-<p><a class="reference external" href="/assets/images/ctucan-config.png"><img alt="Image" src="/assets/images/ctucan-config.png" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/ctucan-config.png"><img alt="Image" src="/assets/images/ctucan-config.png" /></a></p>
 <p>Next we had to update the device tree manually to add a section for CTUCAN driver:</p>
 <dl class="docutils">
 <dt>CTU_CAN_FD_0: <a class="reference external" href="mailto:CTU_CAN_FD&#64;80010000">CTU_CAN_FD&#64;80010000</a> {</dt>
@@ -158,11 +158,11 @@ status = &quot;okay&quot;;
 <p>The link to the complete modified device-tree is available at below link -
 <a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4">https://github.com/disdi/linux-on-litex-vexriscv/commit/64970aea0ce4dfb10d16ffeece8837b032a702d4</a></p>
 <p>When Linux  boots up, it shows the CTUCAN linux driver getting initialized.</p>
-<p><a class="reference external" href="/assets/images/ctucan-linux-boot.png"><img alt="Image2" src="/assets/images/ctucan-linux-boot.png" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/ctucan-linux-boot.png"><img alt="Image2" src="/assets/images/ctucan-linux-boot.png" /></a></p>
 <p>In the buildroot Image booting up we can clearly see the CTUCAN driver module is associated with a device:</p>
-<p><a class="reference external" href="/assets/images/ctucan-buildroot.png"><img alt="Image3" src="/assets/images/ctucan-buildroot.png" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/ctucan-buildroot.png"><img alt="Image3" src="/assets/images/ctucan-buildroot.png" /></a></p>
 <p>Further, it gets enumerated as a network device:</p>
-<p><a class="reference external" href="/assets/images/ctucan-net.png"><img alt="Image4" src="/assets/images/ctucan-net.png" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/ctucan-net.png"><img alt="Image4" src="/assets/images/ctucan-net.png" /></a></p>
 <p>Next step is to connect Digilent Arty Board running CTUCAN IP core with an external MCP2551 CAN transceiver Board and attempt
 CAN transmission to another device on this CAN Bus.</p>
 </div>

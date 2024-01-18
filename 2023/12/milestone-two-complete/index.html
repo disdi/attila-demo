@@ -150,32 +150,32 @@ Update of Litex interfaces was needed to make CAN interface UP and running.</p>
 Support was added to buildroot to include needed utilities for CAN and make it part of bootup script.</p>
 <p>Refer : <a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/commit/64ecd04d2eefc14753181dbf8a1bc65d09c65991">https://github.com/disdi/linux-on-litex-vexriscv/commit/64ecd04d2eefc14753181dbf8a1bc65d09c65991</a></p>
 <p>Below image shows CAN bus coming up on system restart and can-utils is used for communication over CAN network :</p>
-<p><a class="reference external" href="/assets/images/litex-can.png"><img alt="Image" src="/assets/images/litex-can.png" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/litex-can.png"><img alt="Image" src="/assets/images/litex-can.png" /></a></p>
 </li>
 <li><p class="first">Now when CAN IP is up, we needed a CAN transceiver to connect to CAN network. SN65HVD230 CAN Board is used for this purpose.</p>
-<p><a class="reference external" href="/assets/images/SN65HVD230-CAN-Board-2.jpg"><img alt="Image6" src="/assets/images/SN65HVD230-CAN-Board-2.jpg" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/SN65HVD230-CAN-Board-2.jpg"><img alt="Image6" src="/assets/images/SN65HVD230-CAN-Board-2.jpg" /></a></p>
 <p>Refer : <a class="reference external" href="https://www.waveshare.com/sn65hvd230-can-board.htm">https://www.waveshare.com/sn65hvd230-can-board.htm</a></p>
 <p>can_tx and canrx are are mapped to ck_io pins exposed on J4 of Arty Board.
 <a class="reference external" href="https://github.com/disdi/linux-on-litex-vexriscv/blob/master/soc_linux.py#L34">https://github.com/disdi/linux-on-litex-vexriscv/blob/master/soc_linux.py#L34</a></p>
 <p>They are connected to CAN RX and CAN TX of transceiver with 3.3V to power it. Connection between FPGA board and CAN transceiver is shown below :</p>
-<p><a class="reference external" href="/assets/images/fpga-traceiver.jpeg"><img alt="Image2" src="/assets/images/fpga-traceiver.jpeg" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/fpga-traceiver.jpeg"><img alt="Image2" src="/assets/images/fpga-traceiver.jpeg" /></a></p>
 </li>
 <li><p class="first">Considerable testing is done over different CAN devices to confirm CTUCAN IP is able to comunicate over CAN network.
 PCAN-USB adapter is used to emulate CAN device over development computer.</p>
 <p>Refer : <a class="reference external" href="https://www.peak-system.com/PCAN-USB.199.0.html?&amp;L=1">https://www.peak-system.com/PCAN-USB.199.0.html?&amp;L=1</a></p>
 <p>Connection between PCAN-USB adapter with DB9 connector and CAN transceiver is shown below :</p>
-<p><a class="reference external" href="/assets/images/tranciever-Pcanusb.jpeg"><img alt="Image3" src="/assets/images/tranciever-Pcanusb.jpeg" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/tranciever-Pcanusb.jpeg"><img alt="Image3" src="/assets/images/tranciever-Pcanusb.jpeg" /></a></p>
 <p>CANH and CANL of transceiver is attached to (pin2 and pin7) DB9 connector. For DB9 Connector pinout for CAN, refer : <a class="reference external" href="https://documentation.help/NI-CAN/High-Speed_CAN_Pinout_Cable.html">https://documentation.help/NI-CAN/High-Speed_CAN_Pinout_Cable.html</a></p>
 </li>
 <li><p class="first">PCAN-View software run on development computer is to analyze the CAN network to check for the protocal conformity and errors.</p>
 <p>Refer : <a class="reference external" href="https://www.peak-system.com/PCAN-View.242.0.html?&amp;L=1">https://www.peak-system.com/PCAN-View.242.0.html?&amp;L=1</a></p>
-<p><a class="reference external" href="/assets/images/pcan-trace.jpeg"><img alt="Image4" src="/assets/images/pcan-trace.jpeg" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/pcan-trace.jpeg"><img alt="Image4" src="/assets/images/pcan-trace.jpeg" /></a></p>
 </li>
 </ol>
 <div class="section" id="testbench-setup">
 <h2>TestBench Setup</h2>
 <blockquote>
-<a class="reference external" href="/assets/images/can_testbench.png"><img alt="Image5" src="/assets/images/can_testbench.png" /></a></blockquote>
+<a class="reference external image-reference" href="/assets/images/can_testbench.png"><img alt="Image5" src="/assets/images/can_testbench.png" /></a></blockquote>
 <p>The testbench results can be seen by referencing Section 2 where 01010101 sent from Litex Console is recieved in PCAN-View In Section 5.</p>
 </div>
 
