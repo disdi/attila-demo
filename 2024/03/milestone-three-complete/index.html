@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>Milestone 5 Complete</title>
+  <title>Milestone 3 Complete</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -50,13 +50,13 @@
 
 <!-- Open Graph -->
 <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Libre Car"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Milestone 5 Complete"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Milestone 3 Complete"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Controlling BLDC Motor for Vehicle with CTUCAN This is to update on completion of Milestone 3 of the project which involved controlling..."/>
 <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://librecar.dev/2024/03/milestone-three-complete/"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2024-03-17 14:21:00+01:00"/>
-<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content="2024-03-17 12:37:24.299958+01:00"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content="2024-03-17 15:01:55.067925+01:00"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:author" content="https://librecar.dev/author/disdi/">
 <meta prefix="og: http://ogp.me/ns#" property="article:section" content="Nlnet"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:tag" content="Nlnet"/>
@@ -68,10 +68,10 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "Milestone 5 Complete",
-  "headline": "Milestone 5 Complete",
+  "name": "Milestone 3 Complete",
+  "headline": "Milestone 3 Complete",
   "datePublished": "2024-03-17 14:21:00+01:00",
-  "dateModified": "2024-03-17 12:37:24.299958+01:00",
+  "dateModified": "2024-03-17 15:01:55.067925+01:00",
   "author": {
     "@type": "Person",
     "name": "disdi",
@@ -122,7 +122,7 @@
             </a>
           </span>
         </nav>
-        <h1 class="post-title">Milestone 5 Complete</h1>
+        <h1 class="post-title">Milestone 3 Complete</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="https://librecar.dev/author/disdi/">Disdi</a>
@@ -149,9 +149,8 @@ for motor control systems.</p>
 <a class="reference external" href="https://odriverobotics.com/shop">https://odriverobotics.com/shop</a></p>
 <p>The entire firware and GUI to interface with Odrive Hardware is available on GitHub:
 <a class="reference external" href="https://github.com/odriverobotics/ODrive/">https://github.com/odriverobotics/ODrive/</a></p>
-</div>
 <div class="section" id="hardware-requirements">
-<h2>Hardware Requirements</h2>
+<h3>Hardware Requirements</h3>
 <ol class="arabic simple">
 <li>A brushless motor.</li>
 <li>Odrive S1</li>
@@ -160,7 +159,7 @@ for motor control systems.</p>
 </ol>
 </div>
 <div class="section" id="hardware-connections">
-<h2>Hardware Connections</h2>
+<h3>Hardware Connections</h3>
 <ul class="simple">
 <li>Connect screw terminals representing the motor phases to A/B/C of Odrive S1 Power Pads.</li>
 <li>Connect the power supply cables to Odrive S1 solder pads that are labelled +/- and Arty A7 board</li>
@@ -169,7 +168,7 @@ for motor control systems.</p>
 <ul class="simple">
 <li>DC-DC convertor : <a class="reference external" href="https://amzn.eu/d/iUmVObb">https://amzn.eu/d/iUmVObb</a></li>
 </ul>
-<p><a class="reference external image-reference" href="/assets/images/dc-dc.jpg"><img alt="Image" src="/assets/images/dc-dc-conv.jpg" /></a></p>
+<p><a class="reference external image-reference" href="/assets/images/dc-dc.png"><img alt="Image" src="/assets/images/dc-dc.png" /></a></p>
 <ul class="simple">
 <li>DC Hollow Connector :  <a class="reference external" href="https://amzn.eu/d/gej5q8E">https://amzn.eu/d/gej5q8E</a></li>
 </ul>
@@ -178,13 +177,13 @@ for motor control systems.</p>
 <li>Connect Odrive S1 with FPGA board over CAN bus.</li>
 <li>Connect motor to Odrive S1 via 3 phase wire.</li>
 </ul>
-<p>Complete setup can be illustrated in below daiagram</p>
+<p>Complete setup can be illustrated in below daigram</p>
 <p><a class="reference external image-reference" href="/assets/images/setup.png"><img alt="Image6" src="/assets/images/setup.png" /></a></p>
-<p>In reality, it resemebles like seen in below image:
-<a class="reference external image-reference" href="/assets/images/whole-setup.jpeg"><img alt="Image2" src="/assets/images/whole-setup.jpeg" /></a></p>
+<p>In reality, it resemebles like seen in below image:</p>
+<p><a class="reference external image-reference" href="/assets/images/whole-setup.jpeg"><img alt="Image2" src="/assets/images/whole-setup.jpeg" /></a></p>
 </div>
 <div class="section" id="controlling-motor-controller-with-can-bus">
-<h2>Controlling Motor Controller with CAN bus</h2>
+<h3>Controlling Motor Controller with CAN bus</h3>
 <ul class="simple">
 <li>Power up Arty board with CTUCAN driver enabled</li>
 </ul>
@@ -194,26 +193,30 @@ for motor control systems.</p>
 </ul>
 <p><a class="reference external image-reference" href="/assets/images/calibrate.png"><img alt="Image3" src="/assets/images/calibrate.png" /></a></p>
 <ul class="simple">
-<li>Use  CAN bus to set Motor velocity to 1.0 turns/s</li>
+<li>Check if any data is recevied on CAN bus with <cite>candump</cite></li>
 </ul>
+<p><a class="reference external image-reference" href="/assets/images/candump.png"><img alt="Image7" src="/assets/images/candump.png" /></a></p>
+<p>To make sense of this data we would use CAN Simple protocol provided by Odrive.</p>
 <p><a class="reference external" href="https://github.com/odriverobotics/ODriveResources/blob/master/examples/can_simple.py">https://github.com/odriverobotics/ODriveResources/blob/master/examples/can_simple.py</a></p>
+<p>Motor should start rotating with torque of 1 turns per second.</p>
 <p><a class="reference external image-reference" href="/assets/images/can-simple.png"><img alt="Image5" src="/assets/images/can-simple.png" /></a></p>
+</div>
 </div>
 
             </section>
 
             <section class="post-info">
                 <div class="post-share">
-                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=Milestone 5 Complete&amp;url=https://librecar.dev/2024/03/milestone-three-complete/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=Milestone 3 Complete&amp;url=https://librecar.dev/2024/03/milestone-three-complete/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                       <i class="ic ic-twitter" aria-hidden="true"></i><span class="hidden">Twitter</span>
                     </a>
                     <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://librecar.dev/2024/03/milestone-three-complete/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                       <i class="ic ic-facebook" aria-hidden="true"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://librecar.dev/2024/03/milestone-three-complete/&amp;title=Milestone 5 Complete" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
+                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://librecar.dev/2024/03/milestone-three-complete/&amp;title=Milestone 3 Complete" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
                       <i class="ic ic-linkedin" aria-hidden="true"></i><span class="hidden">LinkedIn</span>
                     </a>
-                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=Milestone 5 Complete&amp;body=https://librecar.dev/2024/03/milestone-three-complete/">
+                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=Milestone 3 Complete&amp;body=https://librecar.dev/2024/03/milestone-three-complete/">
                       <i class="ic ic-mail" aria-hidden="true"></i><span class="hidden">Email</span>
                     </a>
                     <div class="clear"></div>
@@ -230,12 +233,12 @@ for motor control systems.</p>
                 <script type="text/javascript">
                     var disqus = 'librecar';
                     var disqus_shortname = 'librecar';
-                    var disqus_identifier = '/2024/03/milestone-five-complete.html';
+                    var disqus_identifier = '/2024/03/milestone-three-complete.html';
                     var disqus_url = 'https://librecar.dev/2024/03/milestone-three-complete/';
                 </script>
                 <noscript>Please enable JavaScript to view the comments.</noscript>
                 <section class="post-comments">
-                        <a id="show-disqus" class="post-comments-activate" data-disqus-identifier="/2024/03/milestone-five-complete.html" >Show Comments</a>
+                        <a id="show-disqus" class="post-comments-activate" data-disqus-identifier="/2024/03/milestone-three-complete.html" >Show Comments</a>
                     <div id="disqus_thread"></div>
                 </section>
 
