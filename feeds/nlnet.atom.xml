@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-01-18T21:38:29+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Documentation</title><link href="https://librecar.dev/2024/01/Documentation/" rel="alternate"></link><published>2024-01-07T21:43:12+02:00</published><updated>2024-01-07T09:05:24+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-01-07:/2024/01/Documentation/</id><content type="html">&lt;p&gt;Documentation to build and test CAN bus with Litex has been added to Wiki section of this website.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-03-17T14:21:00+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 5 Complete</title><link href="https://librecar.dev/2024/03/milestone-three-complete/" rel="alternate"></link><published>2024-03-17T14:21:00+01:00</published><updated>2024-03-17T12:37:24+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-03-17:/2024/03/milestone-three-complete/</id><summary type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
+&lt;h2&gt;Controlling BLDC Motor for Vehicle with CTUCAN&lt;/h2&gt;
+&lt;p&gt;This is to update on completion of Milestone 3 of the project which involved controlling a motor on the CAN network with CTUCAN device.&lt;/p&gt;
+&lt;p&gt;The ODrive is a motor control board based on the STM32 microcontroller.
+It can  be used with BLDC motors …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
+&lt;h2&gt;Controlling BLDC Motor for Vehicle with CTUCAN&lt;/h2&gt;
+&lt;p&gt;This is to update on completion of Milestone 3 of the project which involved controlling a motor on the CAN network with CTUCAN device.&lt;/p&gt;
+&lt;p&gt;The ODrive is a motor control board based on the STM32 microcontroller.
+It can  be used with BLDC motors (brushless DC motors), over a CAN bus to set acceleration, braking, and other parameters
+for motor control systems.&lt;/p&gt;
+&lt;p&gt;Hardware for ODrive is available for sale in the project online shop:
+&lt;a class="reference external" href="https://odriverobotics.com/shop"&gt;https://odriverobotics.com/shop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The entire firware and GUI to interface with Odrive Hardware is available on GitHub:
+&lt;a class="reference external" href="https://github.com/odriverobotics/ODrive/"&gt;https://github.com/odriverobotics/ODrive/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hardware-requirements"&gt;
+&lt;h2&gt;Hardware Requirements&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;A brushless motor.&lt;/li&gt;
+&lt;li&gt;Odrive S1&lt;/li&gt;
+&lt;li&gt;FPGA device with CAN controller/transceiver&lt;/li&gt;
+&lt;li&gt;A &amp;gt;12V power supply or battery.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hardware-connections"&gt;
+&lt;h2&gt;Hardware Connections&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Connect screw terminals representing the motor phases to A/B/C of Odrive S1 Power Pads.&lt;/li&gt;
+&lt;li&gt;Connect the power supply cables to Odrive S1 solder pads that are labelled +/- and Arty A7 board&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since CAN bus is not isolated, use power supply to power both. To run Arty A7 board with same DC source, below accesories can be used :&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;DC-DC convertor : &lt;a class="reference external" href="https://amzn.eu/d/iUmVObb"&gt;https://amzn.eu/d/iUmVObb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/dc-dc.jpg"&gt;&lt;img alt="Image" src="/assets/images/dc-dc-conv.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;DC Hollow Connector :  &lt;a class="reference external" href="https://amzn.eu/d/gej5q8E"&gt;https://amzn.eu/d/gej5q8E&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/dc-connector.jpg"&gt;&lt;img alt="Image1" src="/assets/images/dc-connector.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Connect Odrive S1 with FPGA board over CAN bus.&lt;/li&gt;
+&lt;li&gt;Connect motor to Odrive S1 via 3 phase wire.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Complete setup can be illustrated in below daiagram&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/setup.png"&gt;&lt;img alt="Image6" src="/assets/images/setup.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In reality, it resemebles like seen in below image:
+&lt;a class="reference external image-reference" href="/assets/images/whole-setup.jpeg"&gt;&lt;img alt="Image2" src="/assets/images/whole-setup.jpeg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="controlling-motor-controller-with-can-bus"&gt;
+&lt;h2&gt;Controlling Motor Controller with CAN bus&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Power up Arty board with CTUCAN driver enabled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/ctucan-net.png"&gt;&lt;img alt="Image4" src="/assets/images/ctucan-net.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Use GUI Wizard of Odrive to calibrate the motor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/calibrate.png"&gt;&lt;img alt="Image3" src="/assets/images/calibrate.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Use  CAN bus to set Motor velocity to 1.0 turns/s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/odriverobotics/ODriveResources/blob/master/examples/can_simple.py"&gt;https://github.com/odriverobotics/ODriveResources/blob/master/examples/can_simple.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/can-simple.png"&gt;&lt;img alt="Image5" src="/assets/images/can-simple.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Documentation</title><link href="https://librecar.dev/2024/01/Documentation/" rel="alternate"></link><published>2024-01-07T21:43:12+02:00</published><updated>2024-01-07T09:05:24+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-01-07:/2024/01/Documentation/</id><content type="html">&lt;p&gt;Documentation to build and test CAN bus with Litex has been added to Wiki section of this website.
 Direct link can be found at : &lt;a class="reference external" href="https://disdi.github.io/librecar-wiki/"&gt;https://disdi.github.io/librecar-wiki/&lt;/a&gt; .&lt;/p&gt;
 </content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Milestone 2 Complete</title><link href="https://librecar.dev/2023/12/milestone-two-complete/" rel="alternate"></link><published>2023-12-16T14:21:00+01:00</published><updated>2023-12-16T13:06:38+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-12-16:/2023/12/milestone-two-complete/</id><summary type="html">&lt;p&gt;This is to update on completion of Milestone 2 of the project which involved communication on the CAN network with real CAN devices.&lt;/p&gt;
 &lt;p&gt;The major work done in this Milestone involved :&lt;/p&gt;
@@ -119,8 +183,8 @@ available as python egg in the development environment.&lt;/p&gt;
 
 &lt;p&gt;We created a new Litex Core with CTUCAN controller and mapped it to the processor. When Litex BIOS boots up, CTUCAN
 controller can be seen in the memory region.&lt;/p&gt;
-&lt;p&gt;The link to the code is available &lt;a href="https://github.com/disdi/litex-boards/commit/82413d266bb493768ba8d74b2347e850627f6c81"&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Introduction</title><link href="https://librecar.dev/2023/05/introduction/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2024-01-18T21:38:29+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-05-01:/2023/05/introduction/</id><content type="html">&lt;p&gt;This is introductory post for the project Libre Car Control.&lt;/p&gt;
-&lt;p&gt;This project is funded through the &lt;a href="https://nlnet.nl/entrust/"&gt;NGI Zero Entrust Fund&lt;/a&gt;, a fund established by &lt;a href="https://nlnet.nl/"&gt;NLnet&lt;/a&gt; with financial support from the European Commission’s &lt;a href="https://www.ngi.eu/"&gt;Next Generation Internet&lt;/a&gt; program. &lt;/p&gt;
+&lt;p&gt;The link to the code is available &lt;a href="https://github.com/disdi/litex-boards/commit/82413d266bb493768ba8d74b2347e850627f6c81"&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Introduction</title><link href="https://librecar.dev/2023/05/introduction/" rel="alternate"></link><published>2023-05-01T21:43:12+02:00</published><updated>2024-03-17T09:40:01+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2023-05-01:/2023/05/introduction/</id><content type="html">&lt;p&gt;This is introductory post for the project Libre Car Control.&lt;/p&gt;
+&lt;p&gt;This project is funded through the &lt;a href="https://nlnet.nl/entrust/"&gt;NGI Zero Entrust Fund&lt;/a&gt;, a fund established by &lt;a href="https://nlnet.nl/"&gt;NLnet&lt;/a&gt; with financial support from the European Commission’s &lt;a href="https://www.ngi.eu/"&gt;Next Generation Internet&lt;/a&gt; program.&lt;/p&gt;
 &lt;p&gt;Learn more on the &lt;a href="https://nlnet.nl/project/LibreCarControl/"&gt;NLnet project page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://nlnet.nl"&gt;&lt;img src="https://nlnet.nl/logo/banner.png" alt="NLnet foundation logo" width="20%" /&gt;&lt;/a&gt;
 &lt;a href="https://nlnet.nl/entrust"&gt;&lt;img src="https://nlnet.nl/image/logos/NGI0_tag.svg" alt="NGI Zero Logo" width="20%" /&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="Nlnet"></category><category term="Nlnet"></category></entry></feed>

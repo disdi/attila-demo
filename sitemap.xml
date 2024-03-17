@@ -5,36 +5,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://librecar.dev/</loc>
-<lastmod>2024-01-18T21:40:44-00:00</lastmod>
+<lastmod>2024-03-17T12:38:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/tag/</loc>
-<lastmod>2024-01-18T21:40:44-00:00</lastmod>
+<lastmod>2024-03-17T12:38:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/category/</loc>
-<lastmod>2024-01-18T21:40:44-00:00</lastmod>
+<lastmod>2024-03-17T12:38:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/author/</loc>
-<lastmod>2024-01-18T21:40:44-00:00</lastmod>
+<lastmod>2024-03-17T12:38:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/archive/</loc>
-<lastmod>2024-01-18T21:40:44-00:00</lastmod>
+<lastmod>2024-03-17T12:38:36-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://librecar.dev/2024/03/milestone-three-complete/</loc>
+<lastmod>2024-03-17T12:37:24+01:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -75,28 +82,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://librecar.dev/2023/05/introduction/</loc>
-<lastmod>2024-01-18T21:38:29+01:00</lastmod>
+<lastmod>2024-03-17T09:40:01+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/category/nlnet/</loc>
-<lastmod>2024-01-18T21:38:29+00:53</lastmod>
+<lastmod>2024-03-17T14:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/tag/nlnet/</loc>
-<lastmod>2024-01-18T21:38:29+00:53</lastmod>
+<lastmod>2024-03-17T14:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/author/disdi/</loc>
-<lastmod>2024-01-18T21:38:29+00:53</lastmod>
+<lastmod>2024-03-17T14:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
