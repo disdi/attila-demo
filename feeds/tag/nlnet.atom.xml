@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/tag/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-03-17T15:01:55+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 3 Complete</title><link href="https://librecar.dev/2024/03/milestone-three-complete/" rel="alternate"></link><published>2024-03-17T14:21:00+01:00</published><updated>2024-03-17T15:01:55+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-03-17:/2024/03/milestone-three-complete/</id><summary type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/tag/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-03-17T15:24:53+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 3 Complete</title><link href="https://librecar.dev/2024/03/milestone-three-complete/" rel="alternate"></link><published>2024-03-17T14:21:00+01:00</published><updated>2024-03-17T15:24:53+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-03-17:/2024/03/milestone-three-complete/</id><summary type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
 &lt;h2&gt;Controlling BLDC Motor for Vehicle with CTUCAN&lt;/h2&gt;
-&lt;p&gt;This is to update on completion of Milestone 3 of the project which involved controlling a motor on the CAN network with CTUCAN device.&lt;/p&gt;
-&lt;p&gt;The ODrive is a motor control board based on the STM32 microcontroller.
-It can  be used with BLDC motors …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
+&lt;p&gt;This is to update on completion of Milestone 3 of the project which involved controlling a motor on the CAN network with CTUCAN device.
+We would need to have a motor contoller to interface with our CAN bus and control the motor.&lt;/p&gt;
+&lt;p&gt;The …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
 &lt;h2&gt;Controlling BLDC Motor for Vehicle with CTUCAN&lt;/h2&gt;
-&lt;p&gt;This is to update on completion of Milestone 3 of the project which involved controlling a motor on the CAN network with CTUCAN device.&lt;/p&gt;
+&lt;p&gt;This is to update on completion of Milestone 3 of the project which involved controlling a motor on the CAN network with CTUCAN device.
+We would need to have a motor contoller to interface with our CAN bus and control the motor.&lt;/p&gt;
 &lt;p&gt;The ODrive is a motor control board based on the STM32 microcontroller.
 It can  be used with BLDC motors (brushless DC motors), over a CAN bus to set acceleration, braking, and other parameters
 for motor control systems.&lt;/p&gt;
-&lt;p&gt;Hardware for ODrive is available for sale in the project online shop:
+&lt;p&gt;Hardware for ODrive is available for sale on online shop:
 &lt;a class="reference external" href="https://odriverobotics.com/shop"&gt;https://odriverobotics.com/shop&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The entire firware and GUI to interface with Odrive Hardware is available on GitHub:
+&lt;p&gt;The entire firware and GUI software to interface with Odrive is available on GitHub:
 &lt;a class="reference external" href="https://github.com/odriverobotics/ODrive/"&gt;https://github.com/odriverobotics/ODrive/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/s1.jpg"&gt;&lt;img alt="Image8" src="/assets/images/s1.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="hardware-requirements"&gt;
 &lt;h3&gt;Hardware Requirements&lt;/h3&gt;
 &lt;ol class="arabic simple"&gt;
