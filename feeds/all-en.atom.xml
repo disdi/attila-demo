@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-03-17T15:24:53+01:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 3 Complete</title><link href="https://librecar.dev/2024/03/milestone-three-complete/" rel="alternate"></link><published>2024-03-17T14:21:00+01:00</published><updated>2024-03-17T15:24:53+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-03-17:/2024/03/milestone-three-complete/</id><summary type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/all-en.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-04-04T14:21:00+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 4 Complete</title><link href="https://librecar.dev/2024/04/milestone-four-complete/" rel="alternate"></link><published>2024-04-04T14:21:00+02:00</published><updated>2024-04-04T12:13:21+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-04:/2024/04/milestone-four-complete/</id><summary type="html">&lt;div class="section" id="bringing-up-ethernet-interface-on-litex"&gt;
+&lt;h2&gt;Bringing up Ethernet interface on Litex&lt;/h2&gt;
+&lt;p&gt;Support for CTUCAN interfaces has been extended from Arty to below FPGA boards :&lt;/p&gt;
+&lt;p&gt;Genesys2 : &lt;a class="reference external" href="https://digilent.com/reference/programmable-logic/genesys-2/"&gt;https://digilent.com/reference/programmable-logic/genesys-2/&lt;/a&gt;
+commit : &lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/4e2d1bc537c68c8ab7b63ab31b31a27257dd8a23"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/4e2d1bc537c68c8ab7b63ab31b31a27257dd8a23&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nexys A7 : &lt;a class="reference external" href="https://digilent.com/reference/programmable-logic/nexys-a7/"&gt;https://digilent.com/reference/programmable-logic/nexys-a7/&lt;/a&gt;
+commit : &lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/975064cddb70a86cf43d26888ccb749caaf26be8"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv …&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="bringing-up-ethernet-interface-on-litex"&gt;
+&lt;h2&gt;Bringing up Ethernet interface on Litex&lt;/h2&gt;
+&lt;p&gt;Support for CTUCAN interfaces has been extended from Arty to below FPGA boards :&lt;/p&gt;
+&lt;p&gt;Genesys2 : &lt;a class="reference external" href="https://digilent.com/reference/programmable-logic/genesys-2/"&gt;https://digilent.com/reference/programmable-logic/genesys-2/&lt;/a&gt;
+commit : &lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/4e2d1bc537c68c8ab7b63ab31b31a27257dd8a23"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/4e2d1bc537c68c8ab7b63ab31b31a27257dd8a23&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nexys A7 : &lt;a class="reference external" href="https://digilent.com/reference/programmable-logic/nexys-a7/"&gt;https://digilent.com/reference/programmable-logic/nexys-a7/&lt;/a&gt;
+commit : &lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/975064cddb70a86cf43d26888ccb749caaf26be8"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/975064cddb70a86cf43d26888ccb749caaf26be8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;All the above boards have &amp;quot;ethernet&amp;quot; available in litex project by default so bitstream need not be modified.&lt;/p&gt;
+&lt;p&gt;I added support in litex buildroot configuration file to support bringing up network interface via DHCP.&lt;/p&gt;
+&lt;p&gt;commit : &lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/241ffa8e6a4b3069e7a3f16b9d586160af55d406"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/241ffa8e6a4b3069e7a3f16b9d586160af55d406&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As a result in Litex rootfs, buildroot generated /etc/network/interfaces with dhcp enabled for eth0 as shown below :&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/eth-fpga.png"&gt;&lt;img alt="Image1" src="/assets/images/eth-fpga.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bringing-up-cannelloni-on-litex"&gt;
+&lt;h2&gt;Bringing up Cannelloni on Litex&lt;/h2&gt;
+&lt;p&gt;Cannelloni uses UDP, TCP or SCTP to transfer CAN frames between two machines not connected via CAN bus.&lt;/p&gt;
+&lt;p&gt;Repository: &lt;a class="reference external" href="https://github.com/mguentner/cannelloni"&gt;https://github.com/mguentner/cannelloni&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="cannelloni-on-rpi"&gt;
+&lt;h3&gt;Cannelloni on RPI&lt;/h3&gt;
+&lt;p&gt;We use Raspberry-Pi(RPI) to test cannelloni packet exchange with Litex as shown below :&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/cannelloni-rpi.png"&gt;&lt;img alt="Image2" src="/assets/images/cannelloni-rpi.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The above image shows RPI using a virtual CAN interface and starting cannelloni with Litex IP as remote.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cannelloni-on-litex"&gt;
+&lt;h3&gt;Cannelloni on Litex&lt;/h3&gt;
+&lt;p&gt;Cannelloni is already supported in buildroot.
+I added support in litex buildroot configuration file to support cannelloni on Litex.&lt;/p&gt;
+&lt;p&gt;commit : &lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/6a7676b3ef6d7b3c4a9c905e9fba3d0beddb69e8"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/6a7676b3ef6d7b3c4a9c905e9fba3d0beddb69e8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As a result in Litex rootfs, cannelloni package is installed as shown below :&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/cannelloni-fpga.png"&gt;&lt;img alt="Image3" src="/assets/images/cannelloni-fpga.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The above image shows Litex using CTUCAN interface and starting cannelloni with RPI IP as remote.
+We then use can-utils(cansend and candump) to send/receive CAN packets over UDP.&lt;/p&gt;
+&lt;p&gt;All commits are part of the Pull request to Linux on Litex Project :
+&lt;a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378"&gt;https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Milestone 3 Complete</title><link href="https://librecar.dev/2024/03/milestone-three-complete/" rel="alternate"></link><published>2024-03-17T14:21:00+01:00</published><updated>2024-03-17T15:24:53+01:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-03-17:/2024/03/milestone-three-complete/</id><summary type="html">&lt;div class="section" id="controlling-bldc-motor-for-vehicle-with-ctucan"&gt;
 &lt;h2&gt;Controlling BLDC Motor for Vehicle with CTUCAN&lt;/h2&gt;
 &lt;p&gt;This is to update on completion of Milestone 3 of the project which involved controlling a motor on the CAN network with CTUCAN device.
 We would need to have a motor contoller to interface with our CAN bus and control the motor.&lt;/p&gt;

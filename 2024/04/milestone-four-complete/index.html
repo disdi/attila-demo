@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+  <title>Milestone 4 Complete</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+<link href="https://librecar.dev/2024/04/milestone-four-complete/" rel="canonical" />
+  <!-- Feed -->
+        <link href="https://librecar.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Libre Car Full Atom Feed" />
+          <link href="https://librecar.dev/feeds/nlnet.atom.xml" type="application/atom+xml" rel="alternate" title="Libre Car Categories Atom Feed" />
+
+  <link href="https://librecar.dev/theme/css/style.css" type="text/css" rel="stylesheet" />
+
+    <!-- CSS specified by the user -->
+
+
+    <link href="https://librecar.dev/assets/css/myblog.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+
+    <meta name="description" content="Bringing up Ethernet interface on Litex Support for CTUCAN interfaces has been extended from Arty to below FPGA boards : Genesys2 :...">
+
+    <meta name="author" content="disdi">
+
+    <meta name="tags" content="Nlnet">
+
+
+
+
+<!-- Open Graph -->
+<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Libre Car"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Milestone 4 Complete"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Bringing up Ethernet interface on Litex Support for CTUCAN interfaces has been extended from Arty to below FPGA boards : Genesys2 :..."/>
+<meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://librecar.dev/2024/04/milestone-four-complete/"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2024-04-04 14:21:00+02:00"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content="2024-04-04 12:13:21.047977+02:00"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:author" content="https://librecar.dev/author/disdi/">
+<meta prefix="og: http://ogp.me/ns#" property="article:section" content="Nlnet"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="Nlnet"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://github.com/disdi/attila-demo/raw/main/content/assets/images/logo.png">
+
+<!-- Twitter Card -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "Milestone 4 Complete",
+  "headline": "Milestone 4 Complete",
+  "datePublished": "2024-04-04 14:21:00+02:00",
+  "dateModified": "2024-04-04 12:13:21.047977+02:00",
+  "author": {
+    "@type": "Person",
+    "name": "disdi",
+    "url": "https://librecar.dev/author/disdi/"
+  },
+  "image": "https://librecar.dev/theme/images/post-bg.jpg",
+  "url": "https://librecar.dev/2024/04/milestone-four-complete/",
+  "description": "Bringing up Ethernet interface on Litex Support for CTUCAN interfaces has been extended from Arty to below FPGA boards : Genesys2 :..."
+}
+</script>
+</head>
+<!-- TODO : Body class -->
+<body class="home-template">
+
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
+          <li><a href="/" role="presentation">Home</a></li>
+          <li><a href="https://disdi.github.io/librecar-milestone" role="presentation">Milestones</a></li>
+          <li><a href="https://disdi.github.io/librecar-wiki" role="presentation">Wiki</a></li>
+
+
+    </ul>
+  </div>
+</nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="post-header" >
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="https://librecar.dev/" aria-label="Home" title="Home">
+                  <i class="ic ic-arrow-left" aria-hidden="true"></i>
+                  <span>Home</span>
+                </a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button" aria-label="Menu">
+              <i class="ic ic-menu" aria-hidden="true"></i>
+              <span>Menu</span>
+            </a>
+          </span>
+        </nav>
+        <h1 class="post-title">Milestone 4 Complete</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="https://librecar.dev/author/disdi/">Disdi</a>
+            | <time datetime="04 Apr 2024">04 Apr 2024</time>
+        </span>
+      </div>
+    </header>
+
+  <section id="wrapper">
+    <a class="hidden-close"></a>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <div class="section" id="bringing-up-ethernet-interface-on-litex">
+<h2>Bringing up Ethernet interface on Litex</h2>
+<p>Support for CTUCAN interfaces has been extended from Arty to below FPGA boards :</p>
+<p>Genesys2 : <a class="reference external" href="https://digilent.com/reference/programmable-logic/genesys-2/">https://digilent.com/reference/programmable-logic/genesys-2/</a>
+commit : <a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/4e2d1bc537c68c8ab7b63ab31b31a27257dd8a23">https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/4e2d1bc537c68c8ab7b63ab31b31a27257dd8a23</a></p>
+<p>Nexys A7 : <a class="reference external" href="https://digilent.com/reference/programmable-logic/nexys-a7/">https://digilent.com/reference/programmable-logic/nexys-a7/</a>
+commit : <a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/975064cddb70a86cf43d26888ccb749caaf26be8">https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/975064cddb70a86cf43d26888ccb749caaf26be8</a></p>
+<p>All the above boards have &quot;ethernet&quot; available in litex project by default so bitstream need not be modified.</p>
+<p>I added support in litex buildroot configuration file to support bringing up network interface via DHCP.</p>
+<p>commit : <a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/241ffa8e6a4b3069e7a3f16b9d586160af55d406">https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/241ffa8e6a4b3069e7a3f16b9d586160af55d406</a></p>
+<p>As a result in Litex rootfs, buildroot generated /etc/network/interfaces with dhcp enabled for eth0 as shown below :</p>
+<p><a class="reference external image-reference" href="/assets/images/eth-fpga.png"><img alt="Image1" src="/assets/images/eth-fpga.png" /></a></p>
+</div>
+<div class="section" id="bringing-up-cannelloni-on-litex">
+<h2>Bringing up Cannelloni on Litex</h2>
+<p>Cannelloni uses UDP, TCP or SCTP to transfer CAN frames between two machines not connected via CAN bus.</p>
+<p>Repository: <a class="reference external" href="https://github.com/mguentner/cannelloni">https://github.com/mguentner/cannelloni</a></p>
+<div class="section" id="cannelloni-on-rpi">
+<h3>Cannelloni on RPI</h3>
+<p>We use Raspberry-Pi(RPI) to test cannelloni packet exchange with Litex as shown below :</p>
+<p><a class="reference external image-reference" href="/assets/images/cannelloni-rpi.png"><img alt="Image2" src="/assets/images/cannelloni-rpi.png" /></a></p>
+<p>The above image shows RPI using a virtual CAN interface and starting cannelloni with Litex IP as remote.</p>
+</div>
+<div class="section" id="cannelloni-on-litex">
+<h3>Cannelloni on Litex</h3>
+<p>Cannelloni is already supported in buildroot.
+I added support in litex buildroot configuration file to support cannelloni on Litex.</p>
+<p>commit : <a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/6a7676b3ef6d7b3c4a9c905e9fba3d0beddb69e8">https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378/commits/6a7676b3ef6d7b3c4a9c905e9fba3d0beddb69e8</a></p>
+<p>As a result in Litex rootfs, cannelloni package is installed as shown below :</p>
+<p><a class="reference external image-reference" href="/assets/images/cannelloni-fpga.png"><img alt="Image3" src="/assets/images/cannelloni-fpga.png" /></a></p>
+<p>The above image shows Litex using CTUCAN interface and starting cannelloni with RPI IP as remote.
+We then use can-utils(cansend and candump) to send/receive CAN packets over UDP.</p>
+<p>All commits are part of the Pull request to Linux on Litex Project :
+<a class="reference external" href="https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378">https://github.com/litex-hub/linux-on-litex-vexriscv/pull/378</a></p>
+</div>
+</div>
+
+            </section>
+
+            <section class="post-info">
+                <div class="post-share">
+                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=Milestone 4 Complete&amp;url=https://librecar.dev/2024/04/milestone-four-complete/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                      <i class="ic ic-twitter" aria-hidden="true"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://librecar.dev/2024/04/milestone-four-complete/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                      <i class="ic ic-facebook" aria-hidden="true"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://librecar.dev/2024/04/milestone-four-complete/&amp;title=Milestone 4 Complete" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
+                      <i class="ic ic-linkedin" aria-hidden="true"></i><span class="hidden">LinkedIn</span>
+                    </a>
+                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=Milestone 4 Complete&amp;body=https://librecar.dev/2024/04/milestone-four-complete/">
+                      <i class="ic ic-mail" aria-hidden="true"></i><span class="hidden">Email</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+
+                <aside class="post-tags">
+<a href="https://librecar.dev/tag/nlnet/">Nlnet</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+                <script type="text/javascript">
+                    var disqus = 'librecar';
+                    var disqus_shortname = 'librecar';
+                    var disqus_identifier = '/2024/04/milestone-four-complete.html';
+                    var disqus_url = 'https://librecar.dev/2024/04/milestone-four-complete/';
+                </script>
+                <noscript>Please enable JavaScript to view the comments.</noscript>
+                <section class="post-comments">
+                        <a id="show-disqus" class="post-comments-activate" data-disqus-identifier="/2024/04/milestone-four-complete.html" >Show Comments</a>
+                    <div id="disqus_thread"></div>
+                </section>
+
+                <aside class="post-nav">
+                    <a class="post-nav-prev" href="https://librecar.dev/2024/03/milestone-three-complete/">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">Milestone 3 Complete</h2>
+                            <p class="post-nav-excerpt">Controlling BLDC Motor for Vehicle with CTUCAN This is to update on completion of...</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script type="text/javascript" src="https://librecar.dev/theme/js/script.js"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3546274-12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-3546274-12', { 'anonymize_ip': true });
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'librecar';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
