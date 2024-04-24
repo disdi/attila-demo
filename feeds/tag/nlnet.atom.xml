@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/tag/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-04-04T14:21:00+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 4 Complete</title><link href="https://librecar.dev/2024/04/milestone-four-complete/" rel="alternate"></link><published>2024-04-04T14:21:00+02:00</published><updated>2024-04-04T12:13:21+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-04:/2024/04/milestone-four-complete/</id><summary type="html">&lt;div class="section" id="bringing-up-ethernet-interface-on-litex"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/tag/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-04-24T11:30:43+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 5</title><link href="https://librecar.dev/2024/04/milestine-five/" rel="alternate"></link><published>2024-04-24T01:25:00+02:00</published><updated>2024-04-24T11:30:43+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-24:/2024/04/milestine-five/</id><summary type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
+&lt;h2&gt;Automotive Protcols on Litex&lt;/h2&gt;
+&lt;div class="section" id="unified-diagnostic-services"&gt;
+&lt;h3&gt;Unified Diagnostic Services&lt;/h3&gt;
+&lt;p&gt;Unified Diagnostic Services (UDS) is a communication protocol used in automotive Electronic Control Units (ECUs) to
+enable diagnostics, firmware updates, routine testing and more.&lt;/p&gt;
+&lt;p&gt;UDS communication is performed in a client-server relationship -&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;client being a tester-tool&lt;/li&gt;
+&lt;li&gt;server being a vehicle ECU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The UDS …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
+&lt;h2&gt;Automotive Protcols on Litex&lt;/h2&gt;
+&lt;div class="section" id="unified-diagnostic-services"&gt;
+&lt;h3&gt;Unified Diagnostic Services&lt;/h3&gt;
+&lt;p&gt;Unified Diagnostic Services (UDS) is a communication protocol used in automotive Electronic Control Units (ECUs) to
+enable diagnostics, firmware updates, routine testing and more.&lt;/p&gt;
+&lt;p&gt;UDS communication is performed in a client-server relationship -&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;client being a tester-tool&lt;/li&gt;
+&lt;li&gt;server being a vehicle ECU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The UDS protocol (ISO 14229) is supported on both  CAN and Ethernet.It describes the application layer requirements for
+UDS (independent of what lower layer protocol is used).
+Opensource implementation on CAN is available at:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypi.org/project/udsoncan/"&gt;https://pypi.org/project/udsoncan/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The standard which specifies a transport protocol and network layer services for use in CAN based vehicle networks is
+CAN ISO-TP - Transport Protocol (ISO 15765).
+Opensource implementation is available at:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypi.org/project/can-isotp/"&gt;https://pypi.org/project/can-isotp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DoIP(Diagnostics over Internet Protocol) is a standardized diagnostic transport protocol according to ISO 13400.
+It encapsulates diagnostics messages of protocol standards like Unified Diagnostic Services (UDS) over Ethernet.
+Opensource implementation is available at:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypi.org/project/doipclient/"&gt;https://pypi.org/project/doipclient/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As part of this milestone, integration of the above Opensource projects to buildroot so that it is available on Linux on Litex.
+The link to the integration effort in buildroot project is available at below link -&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://gitlab.com/saket.sinha89/buildroot"&gt;https://gitlab.com/saket.sinha89/buildroot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once they are added to buildroot project, the buildroot configuration can be updated with below options:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/uds-config.png"&gt;&lt;img alt="Image1" src="/assets/images/uds-config.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The screenshoot below shows these packages working on buildroot rootfs of Litex Console:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/uds-buildroot."&gt;&lt;img alt="Image" src="/assets/images/uds-buildroot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Milestone 4 Complete</title><link href="https://librecar.dev/2024/04/milestone-four-complete/" rel="alternate"></link><published>2024-04-04T14:21:00+02:00</published><updated>2024-04-04T12:13:21+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-04:/2024/04/milestone-four-complete/</id><summary type="html">&lt;div class="section" id="bringing-up-ethernet-interface-on-litex"&gt;
 &lt;h2&gt;Bringing up Ethernet interface on Litex&lt;/h2&gt;
 &lt;p&gt;Support for CTUCAN interfaces has been extended from Arty to below FPGA boards :&lt;/p&gt;
 &lt;p&gt;Genesys2 : &lt;a class="reference external" href="https://digilent.com/reference/programmable-logic/genesys-2/"&gt;https://digilent.com/reference/programmable-logic/genesys-2/&lt;/a&gt;
