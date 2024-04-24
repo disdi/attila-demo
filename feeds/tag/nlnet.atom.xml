@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/tag/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-04-24T11:30:43+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 5</title><link href="https://librecar.dev/2024/04/milestine-five/" rel="alternate"></link><published>2024-04-24T01:25:00+02:00</published><updated>2024-04-24T11:30:43+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-24:/2024/04/milestine-five/</id><summary type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - Nlnet</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/tag/nlnet.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-04-24T11:35:09+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 5</title><link href="https://librecar.dev/2024/04/milestine-five/" rel="alternate"></link><published>2024-04-24T01:25:00+02:00</published><updated>2024-04-24T11:35:09+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-24:/2024/04/milestine-five/</id><summary type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
 &lt;h2&gt;Automotive Protcols on Litex&lt;/h2&gt;
 &lt;div class="section" id="unified-diagnostic-services"&gt;
 &lt;h3&gt;Unified Diagnostic Services&lt;/h3&gt;
@@ -33,10 +33,10 @@ Opensource implementation is available at:&lt;/p&gt;
 It encapsulates diagnostics messages of protocol standards like Unified Diagnostic Services (UDS) over Ethernet.
 Opensource implementation is available at:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://pypi.org/project/doipclient/"&gt;https://pypi.org/project/doipclient/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;As part of this milestone, integration of the above Opensource projects to buildroot so that it is available on Linux on Litex.
+&lt;p&gt;As part of this milestone, integration of the above Opensource projects to buildroot is compelted so that it is available on Linux on Litex.
 The link to the integration effort in buildroot project is available at below link -&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://gitlab.com/saket.sinha89/buildroot"&gt;https://gitlab.com/saket.sinha89/buildroot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Once they are added to buildroot project, the buildroot configuration can be updated with below options:&lt;/p&gt;
+&lt;p&gt;Once these python packages are added to buildroot project, the buildroot configuration can be updated with below options:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/uds-config.png"&gt;&lt;img alt="Image1" src="/assets/images/uds-config.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The screenshoot below shows these packages working on buildroot rootfs of Litex Console:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/uds-buildroot."&gt;&lt;img alt="Image" src="/assets/images/uds-buildroot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
