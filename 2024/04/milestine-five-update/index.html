@@ -7,14 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>Milestone 5</title>
+  <title>Milestone 5 Update</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-<link href="https://librecar.dev/2024/04/milestine-five/" rel="canonical" />
+<link href="https://librecar.dev/2024/04/milestine-five-update/" rel="canonical" />
   <!-- Feed -->
         <link href="https://librecar.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Libre Car Full Atom Feed" />
           <link href="https://librecar.dev/feeds/nlnet.atom.xml" type="application/atom+xml" rel="alternate" title="Libre Car Categories Atom Feed" />
@@ -39,7 +39,7 @@
 
 
 
-    <meta name="description" content="Automotive Protcols on Litex Unified Diagnostic Services Unified Diagnostic Services (UDS) is a communication protocol used in...">
+    <meta name="description" content="Automotive Protcols on Litex Universal Measurement and Calibration Protocol The CAN Calibration Protocol (CCP) is an interface that...">
 
     <meta name="author" content="disdi">
 
@@ -50,13 +50,13 @@
 
 <!-- Open Graph -->
 <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Libre Car"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Milestone 5"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Automotive Protcols on Litex Unified Diagnostic Services Unified Diagnostic Services (UDS) is a communication protocol used in..."/>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Milestone 5 Update"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Automotive Protcols on Litex Universal Measurement and Calibration Protocol The CAN Calibration Protocol (CCP) is an interface that..."/>
 <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://librecar.dev/2024/04/milestine-five/"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://librecar.dev/2024/04/milestine-five-update/"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"/>
-<meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2024-04-24 01:25:00+02:00"/>
-<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content="2024-04-24 11:35:09.439981+02:00"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2024-04-25 01:25:00+02:00"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content="2024-04-25 21:41:58.767871+02:00"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:author" content="https://librecar.dev/author/disdi/">
 <meta prefix="og: http://ogp.me/ns#" property="article:section" content="Nlnet"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:tag" content="Nlnet"/>
@@ -68,18 +68,18 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "Milestone 5",
-  "headline": "Milestone 5",
-  "datePublished": "2024-04-24 01:25:00+02:00",
-  "dateModified": "2024-04-24 11:35:09.439981+02:00",
+  "name": "Milestone 5 Update",
+  "headline": "Milestone 5 Update",
+  "datePublished": "2024-04-25 01:25:00+02:00",
+  "dateModified": "2024-04-25 21:41:58.767871+02:00",
   "author": {
     "@type": "Person",
     "name": "disdi",
     "url": "https://librecar.dev/author/disdi/"
   },
   "image": "https://librecar.dev/theme/images/post-bg.jpg",
-  "url": "https://librecar.dev/2024/04/milestine-five/",
-  "description": "Automotive Protcols on Litex Unified Diagnostic Services Unified Diagnostic Services (UDS) is a communication protocol used in..."
+  "url": "https://librecar.dev/2024/04/milestine-five-update/",
+  "description": "Automotive Protcols on Litex Universal Measurement and Calibration Protocol The CAN Calibration Protocol (CCP) is an interface that..."
 }
 </script>
 </head>
@@ -122,11 +122,11 @@
             </a>
           </span>
         </nav>
-        <h1 class="post-title">Milestone 5</h1>
+        <h1 class="post-title">Milestone 5 Update</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="https://librecar.dev/author/disdi/">Disdi</a>
-            | <time datetime="24 Apr 2024">24 Apr 2024</time>
+            | <time datetime="25 Apr 2024">25 Apr 2024</time>
         </span>
       </div>
     </header>
@@ -141,34 +141,26 @@
             <section class="post-content">
                 <div class="section" id="automotive-protcols-on-litex">
 <h2>Automotive Protcols on Litex</h2>
-<div class="section" id="unified-diagnostic-services">
-<h3>Unified Diagnostic Services</h3>
-<p>Unified Diagnostic Services (UDS) is a communication protocol used in automotive Electronic Control Units (ECUs) to
-enable diagnostics, firmware updates, routine testing and more.</p>
-<p>UDS communication is performed in a client-server relationship -</p>
-<ul class="simple">
-<li>client being a tester-tool</li>
-<li>server being a vehicle ECU</li>
-</ul>
-<p>The UDS protocol (ISO 14229) is supported on both  CAN and Ethernet.It describes the application layer requirements for
-UDS (independent of what lower layer protocol is used).
-Opensource implementation on CAN is available at:</p>
-<p><a class="reference external" href="https://pypi.org/project/udsoncan/">https://pypi.org/project/udsoncan/</a></p>
-<p>The standard which specifies a transport protocol and network layer services for use in CAN based vehicle networks is
-CAN ISO-TP - Transport Protocol (ISO 15765).
-Opensource implementation is available at:</p>
-<p><a class="reference external" href="https://pypi.org/project/can-isotp/">https://pypi.org/project/can-isotp/</a></p>
-<p>DoIP(Diagnostics over Internet Protocol) is a standardized diagnostic transport protocol according to ISO 13400.
-It encapsulates diagnostics messages of protocol standards like Unified Diagnostic Services (UDS) over Ethernet.
-Opensource implementation is available at:</p>
-<p><a class="reference external" href="https://pypi.org/project/doipclient/">https://pypi.org/project/doipclient/</a></p>
-<p>As part of this milestone, integration of the above Opensource projects to buildroot is compelted so that it is available on Linux on Litex.
-The link to the integration effort in buildroot project is available at below link -</p>
-<p><a class="reference external" href="https://gitlab.com/saket.sinha89/buildroot">https://gitlab.com/saket.sinha89/buildroot</a></p>
-<p>Once these python packages are added to buildroot project, the buildroot configuration can be updated with below options:</p>
-<p><a class="reference external image-reference" href="/assets/images/uds-config.png"><img alt="Image1" src="/assets/images/uds-config.png" /></a></p>
-<p>The screenshoot below shows these packages working on buildroot rootfs of Litex Console:</p>
-<p><a class="reference external image-reference" href="/assets/images/uds-buildroot."><img alt="Image" src="/assets/images/uds-buildroot.png" /></a></p>
+<div class="section" id="universal-measurement-and-calibration-protocol">
+<h3>Universal Measurement and Calibration Protocol</h3>
+<p>The CAN Calibration Protocol (CCP) is an interface that enables read/write access to an Electronic Control Unit (ECU).
+It enables calibration, data measurement, flashing and more.</p>
+<p>The Universal Measurement and Calibration Protocol (XCP) is the successor to CCP with various improvements including
+support for more transport layers such as Ethernet, FlexRay and SxL.</p>
+<p>XCP provides direct access to the inner workings of an ECU. This lets you request high-frequency parameter data that may
+otherwise only be known to the ECU. Further, it also lets you modify the ECU algorithms and variables, making it easy to
+test and calibrate ECUs.</p>
+<p>The CCP/XCP protocol is based on a single-master/multi-slave concept. An external measurement &amp; calibration tool
+(e.g. a PC/device/data logger) serves as the master and is able to read/write from one or more ECUs aka slaves.</p>
+<p>Opensource implementation of XCP is available at :
+<a class="reference external" href="https://github.com/vectorgrp/XCPlite">https://github.com/vectorgrp/XCPlite</a></p>
+<p>To enable basic XCP on Litex, a small demo implementation is mirrored at :
+<a class="reference external" href="https://github.com/disdi/XCPlite">https://github.com/disdi/XCPlite</a></p>
+<p>As part of this milestone this is now integrated in buildroot :
+<a class="reference external" href="https://gitlab.com/saket.sinha89/buildroot/-/commit/e75a1e270292d99e62bd656b3f162dc79caadac8">https://gitlab.com/saket.sinha89/buildroot/-/commit/e75a1e270292d99e62bd656b3f162dc79caadac8</a></p>
+<p>The below image shows the demo working with creating a dummy XCP Server which talks to XCP slave on Litex over localhost
+via UDP to measure variables at fixed memory address.</p>
+<p><a class="reference external image-reference" href="/assets/images/xcplite-demo.png"><img alt="Image" src="/assets/images/xcplite-demo.png" /></a></p>
 </div>
 </div>
 
@@ -176,16 +168,16 @@ The link to the integration effort in buildroot project is available at below li
 
             <section class="post-info">
                 <div class="post-share">
-                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=Milestone 5&amp;url=https://librecar.dev/2024/04/milestine-five/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=Milestone 5 Update&amp;url=https://librecar.dev/2024/04/milestine-five-update/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                       <i class="ic ic-twitter" aria-hidden="true"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://librecar.dev/2024/04/milestine-five/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://librecar.dev/2024/04/milestine-five-update/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                       <i class="ic ic-facebook" aria-hidden="true"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://librecar.dev/2024/04/milestine-five/&amp;title=Milestone 5" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
+                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://librecar.dev/2024/04/milestine-five-update/&amp;title=Milestone 5 Update" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
                       <i class="ic ic-linkedin" aria-hidden="true"></i><span class="hidden">LinkedIn</span>
                     </a>
-                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=Milestone 5&amp;body=https://librecar.dev/2024/04/milestine-five/">
+                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=Milestone 5 Update&amp;body=https://librecar.dev/2024/04/milestine-five-update/">
                       <i class="ic ic-mail" aria-hidden="true"></i><span class="hidden">Email</span>
                     </a>
                     <div class="clear"></div>
@@ -202,28 +194,21 @@ The link to the integration effort in buildroot project is available at below li
                 <script type="text/javascript">
                     var disqus = 'librecar';
                     var disqus_shortname = 'librecar';
-                    var disqus_identifier = '/2024/04/milestine-five.html';
-                    var disqus_url = 'https://librecar.dev/2024/04/milestine-five/';
+                    var disqus_identifier = '/2024/04/milestine-five-update.html';
+                    var disqus_url = 'https://librecar.dev/2024/04/milestine-five-update/';
                 </script>
                 <noscript>Please enable JavaScript to view the comments.</noscript>
                 <section class="post-comments">
-                        <a id="show-disqus" class="post-comments-activate" data-disqus-identifier="/2024/04/milestine-five.html" >Show Comments</a>
+                        <a id="show-disqus" class="post-comments-activate" data-disqus-identifier="/2024/04/milestine-five-update.html" >Show Comments</a>
                     <div id="disqus_thread"></div>
                 </section>
 
                 <aside class="post-nav">
-                    <a class="post-nav-next" href="https://librecar.dev/2024/04/milestine-five-update/">
-                        <section class="post-nav-teaser">
-                            <i class="ic ic-arrow-left"></i>
-                                <h2 class="post-nav-title">Milestone 5 Update</h2>
-                            <p class="post-nav-excerpt">Automotive Protcols on Litex Universal Measurement and Calibration Protocol The CAN...</p>
-                        </section>
-                    </a>
-                    <a class="post-nav-prev" href="https://librecar.dev/2024/04/milestone-four-complete/">
+                    <a class="post-nav-prev" href="https://librecar.dev/2024/04/milestine-five/">
                         <section class="post-nav-teaser">
                             <i class="ic ic-arrow-right"></i>
-                                <h2 class="post-nav-title">Milestone 4 Complete</h2>
-                            <p class="post-nav-excerpt">Bringing up Ethernet interface on Litex Support for CTUCAN interfaces has been...</p>
+                                <h2 class="post-nav-title">Milestone 5</h2>
+                            <p class="post-nav-excerpt">Automotive Protcols on Litex Unified Diagnostic Services Unified Diagnostic Services...</p>
                         </section>
                     </a>
                     <div class="clear"></div>

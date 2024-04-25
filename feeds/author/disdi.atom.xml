@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - disdi</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/author/disdi.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-04-24T11:35:09+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 5</title><link href="https://librecar.dev/2024/04/milestine-five/" rel="alternate"></link><published>2024-04-24T01:25:00+02:00</published><updated>2024-04-24T11:35:09+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-24:/2024/04/milestine-five/</id><summary type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Libre Car - disdi</title><link href="https://librecar.dev/" rel="alternate"></link><link href="https://librecar.dev/feeds/author/disdi.atom.xml" rel="self"></link><id>https://librecar.dev/</id><updated>2024-04-25T21:41:58+02:00</updated><subtitle>Libre Car Control</subtitle><entry><title>Milestone 5 Update</title><link href="https://librecar.dev/2024/04/milestine-five-update/" rel="alternate"></link><published>2024-04-25T01:25:00+02:00</published><updated>2024-04-25T21:41:58+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-25:/2024/04/milestine-five-update/</id><summary type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
+&lt;h2&gt;Automotive Protcols on Litex&lt;/h2&gt;
+&lt;div class="section" id="universal-measurement-and-calibration-protocol"&gt;
+&lt;h3&gt;Universal Measurement and Calibration Protocol&lt;/h3&gt;
+&lt;p&gt;The CAN Calibration Protocol (CCP) is an interface that enables read/write access to an Electronic Control Unit (ECU).
+It enables calibration, data measurement, flashing and more.&lt;/p&gt;
+&lt;p&gt;The Universal Measurement and Calibration Protocol (XCP) is the successor to CCP with various …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
+&lt;h2&gt;Automotive Protcols on Litex&lt;/h2&gt;
+&lt;div class="section" id="universal-measurement-and-calibration-protocol"&gt;
+&lt;h3&gt;Universal Measurement and Calibration Protocol&lt;/h3&gt;
+&lt;p&gt;The CAN Calibration Protocol (CCP) is an interface that enables read/write access to an Electronic Control Unit (ECU).
+It enables calibration, data measurement, flashing and more.&lt;/p&gt;
+&lt;p&gt;The Universal Measurement and Calibration Protocol (XCP) is the successor to CCP with various improvements including
+support for more transport layers such as Ethernet, FlexRay and SxL.&lt;/p&gt;
+&lt;p&gt;XCP provides direct access to the inner workings of an ECU. This lets you request high-frequency parameter data that may
+otherwise only be known to the ECU. Further, it also lets you modify the ECU algorithms and variables, making it easy to
+test and calibrate ECUs.&lt;/p&gt;
+&lt;p&gt;The CCP/XCP protocol is based on a single-master/multi-slave concept. An external measurement &amp;amp; calibration tool
+(e.g. a PC/device/data logger) serves as the master and is able to read/write from one or more ECUs aka slaves.&lt;/p&gt;
+&lt;p&gt;Opensource implementation of XCP is available at :
+&lt;a class="reference external" href="https://github.com/vectorgrp/XCPlite"&gt;https://github.com/vectorgrp/XCPlite&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To enable basic XCP on Litex, a small demo implementation is mirrored at :
+&lt;a class="reference external" href="https://github.com/disdi/XCPlite"&gt;https://github.com/disdi/XCPlite&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As part of this milestone this is now integrated in buildroot :
+&lt;a class="reference external" href="https://gitlab.com/saket.sinha89/buildroot/-/commit/e75a1e270292d99e62bd656b3f162dc79caadac8"&gt;https://gitlab.com/saket.sinha89/buildroot/-/commit/e75a1e270292d99e62bd656b3f162dc79caadac8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The below image shows the demo working with creating a dummy XCP Server which talks to XCP slave on Litex over localhost
+via UDP to measure variables at fixed memory address.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external image-reference" href="/assets/images/xcplite-demo.png"&gt;&lt;img alt="Image" src="/assets/images/xcplite-demo.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="Nlnet"></category><category term="Nlnet"></category></entry><entry><title>Milestone 5</title><link href="https://librecar.dev/2024/04/milestine-five/" rel="alternate"></link><published>2024-04-24T01:25:00+02:00</published><updated>2024-04-24T11:35:09+02:00</updated><author><name>disdi</name></author><id>tag:librecar.dev,2024-04-24:/2024/04/milestine-five/</id><summary type="html">&lt;div class="section" id="automotive-protcols-on-litex"&gt;
 &lt;h2&gt;Automotive Protcols on Litex&lt;/h2&gt;
 &lt;div class="section" id="unified-diagnostic-services"&gt;
 &lt;h3&gt;Unified Diagnostic Services&lt;/h3&gt;
