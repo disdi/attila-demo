@@ -5,49 +5,49 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://librecar.dev/</loc>
-<lastmod>2024-04-25T21:50:50-00:00</lastmod>
+<lastmod>2024-04-30T11:22:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/tag/</loc>
-<lastmod>2024-04-25T21:50:50-00:00</lastmod>
+<lastmod>2024-04-30T11:22:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/category/</loc>
-<lastmod>2024-04-25T21:50:50-00:00</lastmod>
+<lastmod>2024-04-30T11:22:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/author/</loc>
-<lastmod>2024-04-25T21:50:50-00:00</lastmod>
+<lastmod>2024-04-30T11:22:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/archive/</loc>
-<lastmod>2024-04-25T21:50:50-00:00</lastmod>
+<lastmod>2024-04-30T11:22:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://librecar.dev/2024/04/milestine-five-update/</loc>
-<lastmod>2024-04-25T21:50:41+02:00</lastmod>
+<loc>https://librecar.dev/2024/04/milestone-five-update/</loc>
+<lastmod>2024-04-30T11:18:35+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://librecar.dev/2024/04/milestine-five/</loc>
-<lastmod>2024-04-25T21:50:36+02:00</lastmod>
+<loc>https://librecar.dev/2024/04/milestone-five/</loc>
+<lastmod>2024-04-30T11:18:41+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -110,21 +110,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://librecar.dev/category/nlnet/</loc>
-<lastmod>2024-04-25T21:50:41+00:53</lastmod>
+<lastmod>2024-04-30T11:18:41+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/tag/nlnet/</loc>
-<lastmod>2024-04-25T21:50:41+00:53</lastmod>
+<lastmod>2024-04-30T11:18:41+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://librecar.dev/author/disdi/</loc>
-<lastmod>2024-04-25T21:50:41+00:53</lastmod>
+<lastmod>2024-04-30T11:18:41+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
